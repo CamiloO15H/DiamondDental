@@ -86,6 +86,28 @@
                     "description": "United by the passion of transforming lives through the art of dentistry."
                 }
             }
+        },
+        "results": {
+            "case1": {
+                "title": "Smile Design",
+                "type": "Veneers",
+                "description": "Custom digital design and laser whitening"
+            },
+            "case2": {
+                "title": "Clinical Rehab",
+                "type": "Implants",
+                "description": "Full restoration with high-strength ceramic veneers"
+            },
+            "case3": {
+                "title": "Orthodontics",
+                "type": "Invisalign",
+                "description": "Invisible alignment and functional aesthetic correction"
+            },
+            "case4": {
+                "title": "Aesthetic Harmony",
+                "type": "Restoration",
+                "description": "Smile enhancement with minimal intervention"
+            }
         }
     }
 }

@@ -86,6 +86,28 @@
                     "description": "Unidos por la pasión de transformar vidas a través del arte de la odontología."
                 }
             }
+        },
+        "results": {
+            "case1": {
+                "title": "Smile Design",
+                "type": "Carillas",
+                "description": "Diseño digital personalizado y blanqueamiento láser"
+            },
+            "case2": {
+                "title": "Clinical Rehab",
+                "type": "Implantes",
+                "description": "Restauración completa con carillas cerámicas de alta resistencia"
+            },
+            "case3": {
+                "title": "Ortodoncia",
+                "type": "Invisalign",
+                "description": "Alineación invisible y corrección funcional estética"
+            },
+            "case4": {
+                "title": "Armonía Estética",
+                "type": "Restauración",
+                "description": "Perfeccionamiento de la sonrisa con mínima intervención"
+            }
         }
     }
 }

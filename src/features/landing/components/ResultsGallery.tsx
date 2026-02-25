@@ -14,8 +14,7 @@ function cn(...inputs: ClassValue[]) {
 const cases = [
     {
         id: 1,
-        title: "Smile Design",
-        type: "Veneers",
+        i18nKey: "case1",
         before: "/images/results/case1-before.jpg",
         after: "/images/results/case1-after.jpg",
         aspect: "video" as const,
@@ -23,8 +22,7 @@ const cases = [
     },
     {
         id: 2,
-        title: "Clinical Rehab",
-        type: "Implants",
+        i18nKey: "case2",
         before: "/images/results/case2-before.jpg",
         after: "/images/results/case2-after.jpg",
         aspect: "clinical" as const,
@@ -32,8 +30,7 @@ const cases = [
     },
     {
         id: 3,
-        title: "Orthodontics",
-        type: "Invisalign",
+        i18nKey: "case3",
         before: "/images/results/case3-before.jpg",
         after: "/images/results/case3-after.jpg",
         aspect: "clinical" as const,
@@ -41,8 +38,7 @@ const cases = [
     },
     {
         id: 4,
-        title: "Aesthetic Harmony",
-        type: "Restoration",
+        i18nKey: "case4",
         before: "/images/results/case4-before.jpg",
         after: "/images/results/case4-after.jpg",
         aspect: "video" as const,
@@ -51,6 +47,7 @@ const cases = [
 ];
 
 const ResultsGallery = () => {
+    const t = useTranslations('Index.results');
     const containerRef = React.useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -113,8 +110,13 @@ const ResultsGallery = () => {
                                     className="border border-white/5"
                                 />
                                 <div className="mt-8 flex flex-col">
-                                    <h3 className="text-2xl md:text-3xl font-serif text-white uppercase tracking-[0.1em] mb-2">{item.title}</h3>
-                                    <span className="text-[10px] text-gold-muted uppercase tracking-[0.5em] font-medium opacity-60 ml-[0.5em]">{item.type}</span>
+                                    <div className="flex items-baseline justify-between mb-3 border-b border-white/5 pb-3">
+                                        <h3 className="text-xl md:text-2xl font-serif text-white uppercase tracking-[0.1em]">{t(`${item.i18nKey}.title`)}</h3>
+                                        <span className="text-[9px] text-gold-muted uppercase tracking-[0.3em] font-medium opacity-60 ml-4 whitespace-nowrap">{t(`${item.i18nKey}.type`)}</span>
+                                    </div>
+                                    <p className="text-[10px] md:text-[11px] font-sans text-[#a1a1a1] uppercase tracking-[0.2em] leading-relaxed max-w-[90%]">
+                                        {t(`${item.i18nKey}.description`)}
+                                    </p>
                                 </div>
                             </motion.div>
                         ))}
@@ -141,23 +143,30 @@ const ResultsGallery = () => {
                                     className="border border-white/5"
                                 />
                                 <div className="mt-8 flex flex-col">
-                                    <h3 className="text-2xl md:text-3xl font-serif text-white uppercase tracking-[0.1em] mb-2">{item.title}</h3>
-                                    <span className="text-[10px] text-gold-muted uppercase tracking-[0.5em] font-medium opacity-60 ml-[0.5em]">{item.type}</span>
+                                    <div className="flex items-baseline justify-between mb-3 border-b border-white/5 pb-3">
+                                        <h3 className="text-xl md:text-2xl font-serif text-white uppercase tracking-[0.1em]">{t(`${item.i18nKey}.title`)}</h3>
+                                        <span className="text-[9px] text-gold-muted uppercase tracking-[0.3em] font-medium opacity-60 ml-4 whitespace-nowrap">{t(`${item.i18nKey}.type`)}</span>
+                                    </div>
+                                    <p className="text-[10px] md:text-[11px] font-sans text-[#a1a1a1] uppercase tracking-[0.2em] leading-relaxed max-w-[90%]">
+                                        {t(`${item.i18nKey}.description`)}
+                                    </p>
                                 </div>
                             </motion.div>
                         ))}
                     </motion.div>
                 </div>
 
-                {/* Aesthetic Footer Note */}
+                {/* Footer Note / Signature */}
                 <motion.div
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 0.4 }}
-                    transition={{ duration: 2 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.5 }}
                     viewport={{ once: true }}
-                    className="mt-48 text-center"
+                    className="mt-40 text-center"
                 >
-                    <p className="text-[10px] text-white uppercase tracking-[1em] font-light">Diamond Dental Aesthetic Medicine</p>
+                    <p className="text-[10px] text-white/20 tracking-[1em] uppercase ml-[1em]">
+                        Clinical Excellence Certified
+                    </p>
                 </motion.div>
             </div>
         </section>
