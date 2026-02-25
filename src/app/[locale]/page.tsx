@@ -7,6 +7,7 @@ import SmileCatalog from "@/features/landing/components/SmileCatalog";
 import MapSection from "@/features/landing/components/MapSection";
 import ContactSection from "@/features/landing/components/ContactSection";
 import FloatingCTA from "@/shared/components/FloatingCTA";
+import Footer from "@/shared/components/Footer";
 
 export default function LandingPage() {
     return (
@@ -20,14 +21,7 @@ export default function LandingPage() {
             <MapSection />
             <ContactSection />
             <FloatingCTA />
-
-            {/* Editorial Footer Space */}
-            <footer className="py-20 text-center border-t border-white/5 opacity-40">
-                <p className="font-serif text-2xl mb-4 italic">Diamond Dental</p>
-                <p className="text-[10px] uppercase tracking-widest font-sans">
-                    © 2024 Excellence in Dentistry. Crafted with passion.
-                </p>
-            </footer>
+            <Footer />
         </div>
     );
 }

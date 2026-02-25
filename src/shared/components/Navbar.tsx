@@ -5,6 +5,13 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 export default function Navbar() {
   const t = useTranslations("Index");
@@ -14,7 +21,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 80);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -34,16 +41,36 @@ export default function Navbar() {
       <motion.div
         initial={false}
         animate={{
-          backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.6)" : "rgba(0, 0, 0, 0)",
+          backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0)",
           backdropFilter: isScrolled ? "blur(12px)" : "blur(0px)",
           borderColor: isScrolled ? "rgba(255, 255, 255, 0.1)" : "rgba(255, 255, 255, 0)",
-          paddingTop: isScrolled ? "12px" : "16px",
-          paddingBottom: isScrolled ? "12px" : "16px",
+          paddingTop: isScrolled ? "8px" : "16px",
+          paddingBottom: isScrolled ? "8px" : "16px",
+          borderRadius: isScrolled ? "20px" : "50px",
         }}
-        className="max-w-7xl mx-auto flex items-center justify-between border rounded-full px-8 shadow-2xl transition-all duration-300"
+        className="max-w-7xl mx-auto flex items-center justify-between border px-8 shadow-2xl transition-all duration-300"
       >
-        <Link href="/" className="text-xl md:text-2xl font-serif font-bold tracking-tight text-white group">
-          DIAMOND<span className="text-gold-muted group-hover:text-white transition-colors duration-500">DENTAL</span>
+        <Link href="/" className="relative flex items-center">
+          <motion.div
+            layout
+            animate={{
+              width: isScrolled ? 45 : 180,
+              height: isScrolled ? 45 : 100, // Full height to include text initially
+            }}
+            className="relative overflow-hidden transition-all duration-500"
+          >
+            <Image
+              src="/images/logo-diamond-julio.png"
+              alt="Diamond Dental Logo"
+              width={180}
+              height={100}
+              className={cn(
+                "object-contain transition-all duration-500",
+                isScrolled ? "object-top scale-[1.8]" : "object-center"
+              )}
+              priority
+            />
+          </motion.div>
         </Link>
 
         <div className="flex items-center gap-4 md:gap-8">

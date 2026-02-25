@@ -14,6 +14,14 @@ const playfair = Playfair_Display({
     variable: '--font-playfair',
 });
 
+export const metadata = {
+    title: "Diamond Dental | Excellence in Dentistry",
+    description: "Advanced Aesthetic and Functional Dentistry in Medellín.",
+    icons: {
+        icon: "/images/logo-diamond-julio.png",
+    },
+};
+
 export default async function LocaleLayout({
     children,
     params: { locale },

@@ -158,7 +158,17 @@ const ComparisonSlider: React.FC<ComparisonSliderProps> = ({
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                     >
-                        <div className="flex gap-1">
+                        {/* Branding Isotype in Handle */}
+                        <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none p-2">
+                            <Image
+                                src="/images/logo-diamond-julio.png"
+                                alt="Diamond Isotype"
+                                width={24}
+                                height={24}
+                                className="object-contain object-top scale-[2.5]"
+                            />
+                        </div>
+                        <div className="flex gap-1 z-10">
                             <div className="w-0.5 h-3 bg-white/40 rounded-full" />
                             <div className="w-0.5 h-3 bg-white/40 rounded-full" />
                         </div>
