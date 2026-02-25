@@ -1,0 +1,91 @@
+{
+    "Index": {
+        "title": "Diamond Dental | Luxury Dental Clinic",
+        "hero": {
+            "title": "Designing your Diamond smile",
+            "subtitle": "Dental excellence and cutting-edge technology in an environment of maximum exclusivity.",
+            "ctaMain": "Book your evaluation",
+            "ctaSecondary": "Our cases"
+        },
+        "treatments": {
+            "sectionTitle": "High-Speciality Treatments",
+            "sectionSubtitle": "We combine science, aesthetics, and technology for extraordinary results.",
+            "implants": {
+                "title": "Dental Implants",
+                "description": "Functional and aesthetic restoration with the highest biotechnological standards."
+            },
+            "invisalign": {
+                "title": "Invisible Orthodontics",
+                "description": "Align your smile with absolute discretion and 3D digital planning."
+            },
+            "whitening": {
+                "title": "Laser Whitening",
+                "description": "Immediate Diamond brightness with advanced photo-activation technology."
+            },
+            "technology": {
+                "title": "Advanced Technology",
+                "description": "3D radiology and intraoral scanning for millimeter-precision diagnostics."
+            },
+            "viewDetails": "View Details"
+        },
+        "common": {
+            "bookNow": "Book your Consultation"
+        },
+        "catalog": {
+            "title": "Smile Catalog",
+            "subtitle": "Real transformations that reflect our clinical excellence.",
+            "before": "Before",
+            "after": "After"
+        },
+        "contact": {
+            "title": "Connect with Us",
+            "location": "Location",
+            "hours": "Operating Hours",
+            "booking": "Book Now",
+            "agendar": "Schedule Now",
+            "futureSmile": "Your Future Smile Starts Today",
+            "confirmationNote": "Our specialists will contact you to confirm the date and time of your VIP appointment."
+        },
+        "checkout": {
+            "title": "Premium Checkout",
+            "subtitle": "Specialized Evaluation Booking",
+            "service": "Service",
+            "serviceName": "Diamond 3D Evaluation",
+            "specialist": "Specialist",
+            "specialistName": "Senior Smile Architect",
+            "total": "Total",
+            "cardHolder": "Cardholder Name",
+            "cardNumber": "Card Number",
+            "confirm": "Confirm VIP Booking",
+            "success": "Booking Confirmed!",
+            "successNote": "Your slot has been reserved. A concierge will contact you within 15 minutes.",
+            "backToHome": "Back to Home",
+            "securePayment": "Secure Diamond Payment"
+        },
+        "team": {
+            "title": "Our Specialists",
+            "subtitle": "A team of experts committed to your oral excellence.",
+            "members": {
+                "laura": {
+                    "name": "Dr. Laura",
+                    "role": "Smile Design Specialist",
+                    "bio": "Dedicated to sculpting smiles that radiate confidence and naturalness."
+                },
+                "paula": {
+                    "name": "Dr. Paula",
+                    "role": "Senior Specialist",
+                    "bio": "Expert in oral rehabilitation and advanced dental aesthetics."
+                },
+                "julio": {
+                    "name": "Dr. Julio",
+                    "role": "Maxillofacial Surgeon",
+                    "bio": "Leader in high-complexity and precision surgical processes."
+                },
+                "teamGroup": {
+                    "title": "Diamond Team",
+                    "description": "United by the passion of transforming lives through the art of dentistry."
+                }
+            }
+        }
+    }
+}

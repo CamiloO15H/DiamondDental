@@ -1,0 +1,91 @@
+{
+    "Index": {
+        "title": "Diamond Dental | Clínica Odontológica de Lujo",
+        "hero": {
+            "title": "Diseñamos tu sonrisa Diamond",
+            "subtitle": "Excelencia dental y tecnología de vanguardia en un entorno de máxima exclusividad.",
+            "ctaMain": "Reserva tu valoración",
+            "ctaSecondary": "Nuestros casos"
+        },
+        "treatments": {
+            "sectionTitle": "Tratamientos de Alta Especialidad",
+            "sectionSubtitle": "Combinamos ciencia, estética y tecnología para resultados extraordinarios.",
+            "implants": {
+                "title": "Implantes Dentales",
+                "description": "Restauración funcional y estética con los más altos estándares biotecnológicos."
+            },
+            "invisalign": {
+                "title": "Ortodoncia Invisible",
+                "description": "Alinea tu sonrisa con discreción absoluta y planificación digital 3D."
+            },
+            "whitening": {
+                "title": "Blanqueamiento Laser",
+                "description": "Brillo Diamond inmediato con tecnología de foto-activación avanzada."
+            },
+            "technology": {
+                "title": "Tecnología Avanzada",
+                "description": "Radiología 3D y escaneado intraoral para diagnósticos de precisión milimétrica."
+            },
+            "viewDetails": "Ver Detalles"
+        },
+        "common": {
+            "bookNow": "Reserva tu Cita Sin Coste"
+        },
+        "catalog": {
+            "title": "Catálogo de Sonrisas",
+            "subtitle": "Transformaciones reales que reflejan nuestra excelencia clínica.",
+            "before": "Antes",
+            "after": "Después"
+        },
+        "contact": {
+            "title": "Contacto de Enlace",
+            "location": "Ubicación",
+            "hours": "Horario",
+            "booking": "Reservar",
+            "agendar": "Agendar ahora",
+            "futureSmile": "Tu Futura Sonrisa Empieza Hoy",
+            "confirmationNote": "Nuestros especialistas se comunicarán contigo para confirmar la fecha y hora de tu cita VIP."
+        },
+        "checkout": {
+            "title": "Checkout Premium",
+            "subtitle": "Reserva de Valoración Especializada",
+            "service": "Servicio",
+            "serviceName": "Valoración Diamond 3D",
+            "specialist": "Especialista",
+            "specialistName": "Senior Smile Architect",
+            "total": "Total",
+            "cardHolder": "Titular de la tarjeta",
+            "cardNumber": "Número de tarjeta",
+            "confirm": "Confirmar Reserva VIP",
+            "success": "¡Cita Confirmada!",
+            "successNote": "Tu espacio ha sido reservado. Un concierge se pondrá en contacto contigo en los próximos 15 minutos.",
+            "backToHome": "Volver al Inicio",
+            "securePayment": "Pago Seguro Diamond"
+        },
+        "team": {
+            "title": "Nuestros Especialistas",
+            "subtitle": "Un equipo de expertos comprometidos con tu excelencia oral.",
+            "members": {
+                "laura": {
+                    "name": "Dra. Laura",
+                    "role": "Especialista en Diseños de Sonrisa",
+                    "bio": "Dedicada a esculpir sonrisas que irradian confianza y naturalidad."
+                },
+                "paula": {
+                    "name": "Dra. Paula",
+                    "role": "Especialista Senior",
+                    "bio": "Experta en rehabilitación oral y estética dental avanzada."
+                },
+                "julio": {
+                    "name": "Dr. Julio",
+                    "role": "Cirujano Maxilofacial",
+                    "bio": "Líder en procesos quirúrgicos de alta complejidad y precisión."
+                },
+                "teamGroup": {
+                    "title": "Equipo Diamond",
+                    "description": "Unidos por la pasión de transformar vidas a través del arte de la odontología."
+                }
+            }
+        }
+    }
+}
