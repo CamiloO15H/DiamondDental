@@ -42,6 +42,14 @@ const cases = [
         before: "/images/results/case4-before.jpg",
         after: "/images/results/case4-after.jpg",
         aspect: "video" as const,
+        marginBottom: "mb-24 md:mb-40"
+    },
+    {
+        id: 5,
+        i18nKey: "case5",
+        before: "/images/results/case5-before.jpg",
+        after: "/images/results/case5-after.jpg",
+        aspect: "clinical" as const,
         marginBottom: "mb-0"
     }
 ];
@@ -58,7 +66,7 @@ const ResultsGallery = () => {
     const yParallax = useTransform(scrollYProgress, [0, 1], [0, 150]);
     const springY = useSpring(yParallax, { stiffness: 50, damping: 20 });
 
-    const leftColumn = [cases[0], cases[2]];
+    const leftColumn = [cases[0], cases[2], cases[4]];
     const rightColumn = [cases[1], cases[3]];
 
     return (
