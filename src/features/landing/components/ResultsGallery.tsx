@@ -161,6 +161,21 @@ const ResultsGallery = () => {
                                 </div>
                             </motion.div>
                         ))}
+
+                        {/* Clinic Intro Block */}
+                        <div className="relative mt-8 p-8 md:p-12 border border-white/5 bg-white/[0.02] backdrop-blur-sm rounded-sm">
+                            <div className="absolute top-0 left-8 w-12 h-[1px] bg-gold-muted/30" />
+                            <h2 className="text-2xl md:text-3xl font-serif text-white leading-tight mb-8">
+                                {t('intro.title')}
+                            </h2>
+                            <p className="text-sm md:text-base font-sans text-[#a1a1a1] leading-relaxed">
+                                {t('intro.body')}
+                            </p>
+                            <div className="mt-12 flex items-center gap-4 text-[10px] tracking-[0.4em] text-gold-muted/60 uppercase font-medium">
+                                <span className="w-8 h-[1px] bg-gold-muted/20" />
+                                Diamond Standards
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
 
