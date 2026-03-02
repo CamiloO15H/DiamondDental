@@ -1,35 +1,75 @@
 {
     "Index": {
+        "essence": {
+            "standards": {
+                "tech": "CAD/CAM SYSTEMS",
+                "care": "CUSTOM DESIGN",
+                "results": "HIGH STRENGTH"
+            },
+            "title": "HIGH-PRECISION DENTAL ENGINEERING",
+            "description": "At Diamond Dental Clinic, we transform smiles into works of art. Our dedication to aesthetics and precision merges with an unparalleled luxury experience, meticulously designed to deliver exceptional results that will brighten your face for a lifetime.",
+            "cta": "DISCOVER OUR STORY"
+        },
+        "introduction": {
+            "title": "EXCELLENCE\nHAS A NAME",
+            "body": "Diamond Dental is born from the union of Dr. Julio César Gámez's clinical precision and Dr. Laura Ospina's aesthetic vision. More than a clinic, we are a sanctuary dedicated to dental perfection, where every treatment is a work of art sculpted with cutting-edge technology and unmatched artistic sensibility.",
+            "cta": "DISCOVER THE SANCTUARY"
+        },
         "title": "Diamond Dental | Luxury Dental Clinic",
+        "whyChooseUs": {
+            "title": "Why Choose Diamond Dental?",
+            "points": {
+                "1": {
+                    "title": "Extended Hours",
+                    "description": "Extended hours to adapt to your lifestyle, including flexible schedules Monday through Saturday."
+                },
+                "2": {
+                    "title": "Quality Excellence",
+                    "description": "Certified under international standards to guarantee aesthetic and lasting results."
+                },
+                "3": {
+                    "title": "High Technology & Digitalization",
+                    "description": "100% digital workflow with intraoral scanners to eliminate uncomfortable impressions and streamline processes."
+                },
+                "4": {
+                    "title": "Custom Financing",
+                    "description": "Personalized payment plans so your dental health and aesthetics are always a priority."
+                },
+                "5": {
+                    "title": "Rigorous Methodology",
+                    "description": "Evidence-based clinical protocols for safe and predictable treatments."
+                },
+                "6": {
+                    "title": "Highly Qualified Team",
+                    "description": "Elite specialists with international training dedicated to clinical excellence."
+                },
+                "7": {
+                    "title": "Exclusive Parking",
+                    "description": "Total comfort from arrival with private parking inside the shopping center."
+                },
+                "8": {
+                    "title": "Dental Anxiety Control",
+                    "description": "Environment designed for your comfort and modern techniques for a stress-free experience."
+                },
+                "9": {
+                    "title": "Premium Experience",
+                    "description": "Over 20 years transforming smiles with an artisanal approach and attention to detail."
+                },
+                "10": {
+                    "title": "Personalized Care",
+                    "description": "We listen to your wishes to create a treatment designed exclusively for you."
+                }
+            }
+        },
         "hero": {
             "title": "Designing your Diamond smile",
             "subtitle": "Dental excellence and cutting-edge technology in an environment of maximum exclusivity.",
             "ctaMain": "Book your evaluation",
-            "ctaSecondary": "Our cases"
-        },
-        "treatments": {
-            "sectionTitle": "High-Speciality Treatments",
-            "sectionSubtitle": "We combine science, aesthetics, and technology for extraordinary results.",
-            "implants": {
-                "title": "Dental Implants",
-                "description": "Functional and aesthetic restoration with the highest biotechnological standards."
-            },
-            "invisalign": {
-                "title": "Invisible Orthodontics",
-                "description": "Align your smile with absolute discretion and 3D digital planning."
-            },
-            "whitening": {
-                "title": "Laser Whitening",
-                "description": "Immediate Diamond brightness with advanced photo-activation technology."
-            },
-            "technology": {
-                "title": "Advanced Technology",
-                "description": "3D radiology and intraoral scanning for millimeter-precision diagnostics."
-            },
-            "viewDetails": "View Details"
+            "ctaSecondary": "Our cases",
+            "ctaTertiary": "Exclusive Services"
         },
         "common": {
-            "bookNow": "Book your Consultation"
+            "bookNow": "Book your Free Consultation"
         },
         "catalog": {
             "title": "Smile Catalog",
@@ -65,27 +105,82 @@
         "team": {
             "title": "Our Specialists",
             "subtitle": "A team of experts committed to your oral excellence.",
+            "groupSubtitle": "Excellence and Passion in Every Smile",
             "members": {
                 "laura": {
-                    "name": "Dr. Laura",
-                    "role": "Smile Design Specialist",
-                    "bio": "Dedicated to sculpting smiles that radiate confidence and naturalness."
+                    "name": "Dr. Laura Ospina",
+                    "role": "Aesthetic Dentist",
+                    "quote": "Natural beauty is a work of art and clinical precision.",
+                    "bio": "Expert in Dental Aesthetics and Advanced Restoration. With a minimalist and detail-oriented approach, she transforms each smile into a unique expression of self-confidence and natural elegance.",
+                    "specialty": "Signature Aesthetics",
+                    "services": [
+                        "Smile Design",
+                        "Porcelain Veneers",
+                        "Laser Whitening",
+                        "Oral Rehabilitation"
+                    ]
                 },
                 "paula": {
-                    "name": "Dr. Paula",
-                    "role": "Senior Specialist",
-                    "bio": "Expert in oral rehabilitation and advanced dental aesthetics."
+                    "name": "Dr. Paula López",
+                    "role": "Aesthetic Dentist",
+                    "quote": "Each smile is a unique canvas waiting to reveal its full splendor.",
+                    "bio": "Dedicated to high-precision Aesthetic Dentistry. Her passion is to restore functionality and perfect aesthetics, combining art and science for surprising and lasting results.",
+                    "specialty": "Aesthetic Dentistry & Pediatric Dentistry",
+                    "services": [
+                        "High Aesthetic Resins",
+                        "Dental Inlays",
+                        "Gingival Contouring",
+                        "Premium Pediatric Dentistry"
+                    ]
                 },
                 "julio": {
-                    "name": "Dr. Julio",
-                    "role": "Maxillofacial Surgeon",
-                    "bio": "Leader in high-complexity and precision surgical processes."
+                    "name": "Dr. Julio César Gámez",
+                    "role": "Orthodontist",
+                    "quote": "Perfect harmony is born from impeccable function and balance.",
+                    "bio": "Specialist in Clear Orthodontics and Functional Smile Design. Over 15 years creating aligned and healthy smiles with cutting-edge technology and incomparable precision.",
+                    "specialty": "International Mastership - Spain & Brazil",
+                    "services": [
+                        "Invisible Orthodontics",
+                        "Self-ligating Brackets",
+                        "Maxillary Orthopedics",
+                        "Accelerated Alignment"
+                    ]
                 },
-                "teamGroup": {
-                    "title": "Diamond Team",
-                    "description": "United by the passion of transforming lives through the art of dentistry."
+                "jhon": {
+                    "name": "Dr. Jhon Esteban Garcia",
+                    "role": "Implantologist",
+                    "quote": "Dental engineering is the foundation of eternal aesthetics.",
+                    "bio": "Specialist in Advanced Oral Rehabilitation and Implantology. His approach focuses on high-complexity functional and aesthetic reconstruction, using immediate-load protocols and state-of-the-art biocompatible materials.",
+                    "specialty": "Advanced Implantology",
+                    "services": [
+                        "Dental Implants",
+                        "Full Rehabilitation",
+                        "Implant Prosthetics",
+                        "Dental Aesthetics"
+                    ]
+                },
+                "camila": {
+                    "name": "Camila Jiménez",
+                    "role": "Administrator",
+                    "quote": "We design an exclusive experience from the very first moment.",
+                    "bio": "Patient Experience Director. Her mission is to ensure that every visit to Diamond Dental is a journey of comfort, exclusivity, and personalized attention, always exceeding expectations.",
+                    "specialty": "Experience Management",
+                    "services": [
+                        "VIP Patient Management",
+                        "Treatment Coordination",
+                        "Personalized Advisory",
+                        "Concierge Care"
+                    ]
                 }
             }
+        },
+        "teamIntro": {
+            "badge": "LEADERSHIP",
+            "title": "Brilliant Minds,\nArtist Hands",
+            "description": "Behind every Diamond smile is a team of elite specialists. Masters in their discipline, each member shares a single philosophy: the pursuit of perfection without compromise."
+        },
+        "teamCommon": {
+            "viewProfile": "View Profile"
         },
         "results": {
             "case1": {
@@ -115,7 +210,493 @@
             },
             "intro": {
                 "title": "Clinical Excellence at the Heart of Your Smile",
-                "body": "We are Diamond Dental, specialists in Advanced Aesthetic and Functional Dentistry. Our clinic redefines the dental experience in an exclusive environment, providing high-precision solutions with cutting-edge technology and minimally invasive treatments. With latest-generation materials and a team of dentists passionate about perfection, we are leaders in Smile Design, Ceramic Veneers, and High-End Implantology."
+                "body": "We are Diamond Dental, specialists in Advanced Aesthetic and Functional Dentistry. Our clinic redefines the dental experience in an exclusive environment, providing high-precision solutions with cutting-edge technology and minimally invasive treatments.",
+                "badge": "Diamond Protocol"
+            },
+            "footerBody": "At Diamond Dental, we ensure quality excellence and a desired result before definitive implementation.",
+            "viewGallery": "Learn More"
+        },
+        "footer": {
+            "philosophy": "Excellence in every smile.",
+            "contact": {
+                "title": "Contact",
+                "address": "Cl. 51 # 73 -73, Laureles - Estadio, Medellín (In front of C.C. El Diamante)",
+                "phone": "+57 314 8311777",
+                "email": "diamondental.clinica@gmail.com"
+            },
+            "schedule": {
+                "title": "Hours",
+                "weekdays": "Mon – Fri: 9:30 AM – 7:00 PM",
+                "saturday": "Sat: 9:30 AM – 2:00 PM",
+                "sunday": "Sun: Closed"
+            },
+            "social": {
+                "title": "Follow Us"
+            },
+            "copyright": "© 2026 Diamond Dental. All rights reserved.",
+            "designedBy": "Design and Development by",
+            "privacy": "Privacy Policy",
+            "terms": "Legal Terms"
+        },
+        "booking": {
+            "modal": {
+                "title": "Book Your Diamond Appointment",
+                "subtitle": "Select the treatment and complete your details for priority care.",
+                "nameLabel": "Your Name",
+                "namePlaceholder": "E.g. John Smith",
+                "treatmentLabel": "Treatment of Interest",
+                "treatmentPlaceholder": "Select a treatment",
+                "treatments": {
+                    "design": "Smile Design",
+                    "implants": "Dental Implants",
+                    "orto": "Invisible Orthodontics",
+                    "whitening": "Whitening",
+                    "general": "General Evaluation"
+                },
+                "submit": "Schedule via WhatsApp",
+                "footer": "You will be redirected to our official WhatsApp Business channel."
+            },
+            "whatsappMessage": "Hello Diamond Dental, I'm {name} and I'd like to schedule my {treatment} evaluation."
+        },
+        "navigation": {
+            "home": "HOME",
+            "gallery": "CASES",
+            "services": "SERVICES",
+            "nosotros": "ABOUT US",
+            "location": "LOCATION",
+            "resenas": "REVIEWS",
+            "contact": "CONTACT",
+            "team": "TEAM",
+            "booking": "Book assessment"
+        },
+        "contactPage": {
+            "title": "Diamond Experience",
+            "subtitle": "Excellence and Trust in every detail",
+            "trustBadge": "98% Recommendation",
+            "whatsappLabel": "WHATSAPP",
+            "emailLabel": "EMAIL",
+            "openStatus": "OPEN",
+            "scheduleLabel": "Hours",
+            "weekdaysShort": "M-F",
+            "saturdayShort": "SAT",
+            "weekdaysHours": "9:30 AM - 7:00 PM",
+            "saturdayHours": "9:30 AM - 2:00 PM",
+            "heroCtaTitle": "Ready for Your Diamond Smile?",
+            "heroCtaBody": "Schedule your personalized evaluation directly via WhatsApp. Immediate response from our team.",
+            "heroCtaButton": "TALK TO A SPECIALIST",
+            "heroCtaNote": "Average response time: < 5 minutes",
+            "whatsappMessage": "Hello Diamond Dental, I'd like to schedule my evaluation.",
+            "formAlertError": "Failed to send. Please try again.",
+            "formAlertConnection": "Connection error. Please try again.",
+            "whatsappWelcome": "Hello! 👋 How can we help?",
+            "placeholders": {
+                "name": "e.g. Mary Smith",
+                "email": "email@example.com",
+                "phone": "+57 300 000 0000",
+                "reason": "Tell us what you need..."
+            },
+            "channelsTitle": "CONTACT CHANNELS",
+            "locationLabel": "LOCATION",
+            "locationValue": "Cl. 51 # 73 -73, Laureles",
+            "formTitle": "Send Us a Message",
+            "formSubtitle": "Prefer us to contact you? Leave your details.",
+            "socialTitle": "FOLLOW US",
+            "socialBody": "Discover our patients' before and after, real testimonials, and exclusive content about dental aesthetics.",
+            "info": {
+                "address": "Calle 51 # 73 -73",
+                "reference": "In front of C.C. El Diamante",
+                "city": "Medellín, Colombia",
+                "viewMap": "See exact location"
+            },
+            "description": "At Diamond Dental, every smile is a work of art. Our clinic in Medellín welcomes local and international patients seeking the highest precision in dental aesthetics.",
+            "servicesHeader": "Our Aesthetic Specialties",
+            "services": {
+                "ceramic": {
+                    "title": "Ceramic Smile Design",
+                    "desc": "High-end ceramic lenses for unbeatable durability and aesthetics."
+                },
+                "resin": {
+                    "title": "Resin Perfection",
+                    "desc": "Natural and brilliant results with state-of-the-art resins."
+                },
+                "international": {
+                    "title": "International Experience",
+                    "desc": "Protocols designed for patients traveling from abroad."
+                }
+            },
+            "quickForm": {
+                "title": "Quick Inquiry",
+                "name": "Name",
+                "email": "Email",
+                "phone": "Phone",
+                "reason": "Reason for inquiry",
+                "submit": "Submit Inquiry",
+                "privacy": "Your data is protected and confidential.",
+                "successTitle": "Message Sent",
+                "successBody": "Thank you for writing to us. Our team will contact you soon.",
+                "successButton": "Send another message"
+            },
+            "firstVisit": {
+                "title": "Book your evaluation",
+                "description": "Comprehensive diagnosis with 3D technology for natural results.",
+                "preferredTime": "Preferred time",
+                "submit": "Confirm Booking"
+            }
+        },
+        "quickResults": {
+            "title": "THE ART OF TRANSFORMATION",
+            "subtitle": "Impeccable Results",
+            "viewCases": "VIEW BEFORE AND AFTER",
+            "cta": "Explore All Cases",
+            "categories": {
+                "natural": "Natural Designs",
+                "total": "Total Transformations",
+                "functional": "Functional Health"
+            }
+        },
+        "nosotros": {
+            "hero": {
+                "title": "THE CONVERGENCE OF TWO LEGACIES",
+                "subtitle": "Excellence that transcends borders"
+            },
+            "story": {
+                "title": "Our Story",
+                "body": "Diamond Dental is the testimony of a shared passion that transcends borders. Founded by doctors Julio César Gámez and Laura Ospina —spouses and allies in perfection—, our clinic is born from years of training in the epicenters of world dentistry.\n\nDr. Julio, Master in Orthodontics trained in Brazil and with a master's degree from a prestigious Spanish university, brings functional architecture and millimetric precision. Dr. Laura, with a trajectory of constant international specialization, brings the artistic vision and aesthetic detail that defines every Diamond smile.\n\nFor years we have been not only transforming teeth, but restoring confidence and bringing back the joy of living. At Diamond Dental, every treatment is a personal commitment from a family dedicated to excellence.",
+                "legacy": "Diamond Dental is the culmination of a shared vision by doctors Julio César Gámez and Laura Ospina, spouses and allies in the pursuit of dental perfection. Our clinic represents the convergence between microscopic precision and signature aesthetics.\n\nDr. Julio, with an international Master's degree and training in Brazil and Spain, brings functional and orthodontic architecture. Dr. Laura, in constant worldwide specialization, leads the artistic vision and ceramic detail. Together, they have dedicated their lives to transforming not just smiles, but the confidence of thousands of patients in Medellín."
+            },
+            "philosophy": {
+                "badge": "PHILOSOPHY",
+                "title": "The Gift of Service",
+                "body": "Beyond clinical excellence and technological innovation, the true heart of Diamond Dental beats to the rhythm of empathy. As spouses and professionals, we share a fundamental purpose: the genuine gift of helping. We believe that high dentistry requires not only millimetric precision, but also deep responsibility and human closeness. Our commitment is to accompany you every step of the way, providing you with kind, warm, and personalized treatment, because we understand that each smile holds a story of trust that deserves to be cared for with the utmost respect."
+            },
+            "mastery": {
+                "badge": "INNOVATION",
+                "title": "Mastery and Vanguard",
+                "body": "Our obsession with perfection drives us to maintain a state of constant evolution. We never stop learning, modernizing, or integrating the latest scientific innovations into our practice. From 3D digital planning and high-precision invisible orthodontics led by Dr. Julio, to signature aesthetics and ceramic restorations perfected by Dr. Laura, every protocol at Diamond Dental is designed under the most rigorous worldwide standards, guaranteeing architecturally perfect and aesthetically unsurpassable results.",
+                "education": "Education",
+                "educationDesc": "Continuous Worldwide Training",
+                "technology": "Technology",
+                "technologyDesc": "3D Invisible Orthodontics",
+                "julio": {
+                    "name": "Dr. Julio César",
+                    "role": "Expert in Invisible Orthodontics"
+                },
+                "laura": {
+                    "name": "Dr. Laura Ospina",
+                    "role": "Expert in Signature Aesthetics"
+                }
+            }
+        },
+        "servicios": {
+            "title": "Exclusive Services",
+            "subtitle": "Luxury Dental Engineering",
+            "cta": "REQUEST EVALUATION",
+            "tagline": "We merge elite dentistry with absolute comfort, offering treatments that are the gold standard in dental aesthetics.",
+            "whatsappMessage": "Hello Diamond Dental, I'd like to schedule an evaluation for the {serviceTitle} service.",
+            "stories": {
+                "badge": "EDUCATION & AESTHETICS",
+                "title": "Diamond Stories",
+                "body": "Explore our visual library where we share testimonials, deep knowledge, and the art that brings perfection to life."
+            },
+            "storiesVideos": {
+                "video1Title": "Implant Myths",
+                "video1Author": "Dr. Jhon",
+                "video2Title": "Full Rehabilitation",
+                "video2Author": "Full Mouth",
+                "video3Title": "Design and Extreme Makeover",
+                "video3Author": "Ceramic Lenses"
+            },
+            "list": {
+                "smileDesign": {
+                    "title": "Smile Design",
+                    "description": "We sculpt personalized works of art that reflect your essence. With CAD/CAM digital technology and ultra-thin ceramic lenses, we achieve perfect symmetry and luminosity."
+                },
+                "orthodontics": {
+                    "title": "Invisible Orthodontics",
+                    "description": "The evolution of orthodontics. Digitally designed clear aligners to correct your smile with absolute discretion, comfort, and micrometric precision."
+                },
+                "aesthetics": {
+                    "title": "Aesthetic Dentistry",
+                    "description": "Perfection under magnification. Minimally invasive treatments, from clinical whitening to fine aesthetic restorations, preserving the naturalness of each tooth."
+                },
+                "implants": {
+                    "title": "Implant Engineering",
+                    "description": "Advanced oral rehabilitation to restore both function and aesthetics. We use biocompatible titanium components and international-standard ceramic crowns."
+                },
+                "endodontics": {
+                    "title": "Micro-Endodontics",
+                    "description": "High-precision dental preservation. Dr. Sara Vaca Muriel employs cutting-edge technology for painless root canal treatments, saving the natural structure of your teeth."
+                },
+                "scanner": {
+                    "title": "3D Intraoral Scanner",
+                    "description": "An elevated clinical experience. We replace traditional impressions with immediate and comfortable digital scans, ensuring predictable and accurate results."
+                }
+            }
+        },
+        "reviews": {
+            "badge": "TESTIMONIALS",
+            "title": "HAPPY PATIENTS",
+            "list": [
+                {
+                    "id": 1,
+                    "name": "María Camila Posada",
+                    "text": "The care is on another level. My veneers came out perfect, super natural. I recommend them with my eyes closed!",
+                    "stars": 5,
+                    "avatar": "M",
+                    "source": "Google Review"
+                },
+                {
+                    "id": 2,
+                    "name": "Juan Pablo Restrepo",
+                    "text": "Incredible experience. The technology they use is impressive, far superior to any clinic in Medellín.",
+                    "stars": 5,
+                    "avatar": "J",
+                    "source": "Instagram"
+                },
+                {
+                    "id": 3,
+                    "name": "Valentina Arango",
+                    "text": "My smile design exceeded all my expectations. High dental engineering applied to art.",
+                    "stars": 5,
+                    "avatar": "V",
+                    "source": "Facebook"
+                },
+                {
+                    "id": 4,
+                    "name": "David Uribe",
+                    "text": "Pure excellence. Impeccable results that last for years. They treat you like royalty.",
+                    "stars": 5,
+                    "avatar": "D",
+                    "source": "Google Review"
+                }
+            ]
+        },
+        "resenasPage": {
+            "title": "VOICES THAT TRANSFORM SMILES",
+            "subtitle": "The trust we build every day",
+            "ctaTitle": "YOU CAN BE <br /> THE NEXT.",
+            "ctaButton": "BOOK YOUR EVALUATION",
+            "treatmentLabel": "Treatment performed:",
+            "teamLabel": "Performed by:",
+            "teamName": "Diamond Dental Team",
+            "viewOnFacebook": "View on Facebook",
+            "whatsappContextAction": "I want a result like this",
+            "reviews": [
+                {
+                    "id": "1",
+                    "quote": "\"The precision and detail with which they transformed my smile exceeded all my expectations of luxury and comfort.\"",
+                    "treatment": "High Aesthetic Resin Smile Design",
+                    "specialist": "Dr. Julio and Dr. Laura",
+                    "videoId": "1270164364977692"
+                },
+                {
+                    "id": "2",
+                    "quote": "\"An exceptional experience that gave me back my confidence. The result is as natural as it is elegant.\"",
+                    "treatment": "Full Oral Rehabilitation",
+                    "specialist": "Dr. Laura and Interdisciplinary Team",
+                    "videoId": "31116606414593043"
+                },
+                {
+                    "id": "3",
+                    "quote": "\"Every detail was handled with mastery. Feeling you're in expert hands is priceless.\"",
+                    "treatment": "Ceramic Lens Smile Design",
+                    "specialist": "Dr. Julio",
+                    "videoId": "829104302311905"
+                },
+                {
+                    "id": "4",
+                    "quote": "\"A total life change. Diamond Dental's technology and professionalism are unmatched.\"",
+                    "treatment": "Invisible Orthodontics Integrated with Smile Design",
+                    "specialist": "Dr. Laura",
+                    "videoId": "537616972003729"
+                },
+                {
+                    "id": "5",
+                    "quote": "\"Being able to smile freely again is a gift. Their level of perfection left me amazed.\"",
+                    "treatment": "High-End Dental Implant Rehabilitation",
+                    "specialist": "Dr. Julio",
+                    "videoId": "1001549765120410"
+                },
+                {
+                    "id": "6",
+                    "quote": "\"A dazzling aesthetic that respects my naturalness. The result projects exactly who I am.\"",
+                    "treatment": "Minimally Invasive Personalized Smile Design",
+                    "specialist": "Dr. Julio",
+                    "videoId": "1826825298126458"
+                },
+                {
+                    "id": "7",
+                    "quote": "\"The human quality of the team is just as impressive as the dental results.\"",
+                    "treatment": "Injected Resin Smile Design",
+                    "specialist": "Dr. Julio and Dr. Laura",
+                    "videoId": "1081515760343503"
+                },
+                {
+                    "id": "8",
+                    "quote": "\"A work of art on my face. The facial harmony they achieved goes beyond dentistry.\"",
+                    "treatment": "Bioaesthetic Oral Rehabilitation with Microtexturing",
+                    "specialist": "Dr. Julio",
+                    "videoId": "930027888555564"
+                },
+                {
+                    "id": "9",
+                    "quote": "\"The comfort throughout the process and the beauty of the final result are truly the ideal standard.\"",
+                    "treatment": "Premium Smile Design",
+                    "specialist": "Dr. Laura",
+                    "videoId": "28114817774776348"
+                },
+                {
+                    "id": "10",
+                    "quote": "\"It's inspiring to see so much passion and perfection applied to the latest in modern dentistry.\"",
+                    "treatment": "Design Replacement and Gingival Leveling",
+                    "specialist": "Dr. Julio",
+                    "videoId": "475831278178940"
+                },
+                {
+                    "id": "11",
+                    "quote": "\"My new smile projects confidence, elegance, and above all, absolute authenticity.\"",
+                    "treatment": "Clear Aligners and Laser Whitening",
+                    "specialist": "Dr. Laura",
+                    "videoId": "1549323669191648"
+                }
+            ]
+        },
+        "metadata": {
+            "title": "Diamond Dental | Aesthetic Dentistry in Medellín",
+            "description": "We transform smiles with precision, cutting-edge technology, and an impeccable quality standard in Medellín. Luxury Dentistry."
+        },
+        "casos": {
+            "header": {
+                "badge": "SMILE MUSEUM",
+                "title": "THE ART OF <br />TRANSFORMING",
+                "quote": "\"Each smile is a unique canvas where high dental engineering meets our artistic vision.\"",
+                "back": "BACK TO HOME"
+            },
+            "faceTransformation": {
+                "badge": "Structural Impact",
+                "title": "Face <br />Transformation",
+                "body": "At Diamond Dental, we don't just design teeth; we project facial harmony. Proper oral rehabilitation impacts lip projection, profile, and muscular symmetry.",
+                "oclusionTitle": "Functional Occlusion",
+                "oclusionBody": "Millimetric stability in every bite.",
+                "bioTitle": "Biocompatibility",
+                "bioBody": "Premium materials that respect your biology.",
+                "caseLabel": "Real Case"
+            },
+            "testimonial": {
+                "title": "TRUST THAT CONQUERS BORDERS",
+                "subtitle": "STORIES THAT TRANSCEND",
+                "body": "Many of our patients arrive hoping to recover a confidence they thought was lost. We welcome visitors from the United States and around the world who trust in our technical innovation. It's never too late to smile freely again; daring to innovate is the first step to feeling fully comfortable with yourself."
+            },
+            "macro": {
+                "title": "Ceramic Micro-texturing",
+                "subtitle": "Engineering for Eternity",
+                "quote": "The Art in the Details",
+                "body": "Our macro restorations highlight the absolute mimesis with natural enamel. We don't just rehabilitate function, we sculpt the translucency and micro-groove that define an authentic smile."
+            },
+            "comparative": {
+                "title": "Changing Lives",
+                "subtitle": "Comparative Clinical Cases",
+                "body": "The evidence of our architectural precision and attention to detail is reflected in every transformation. Explore a selection of our most representative clinical cases and observe the before and after of a true Diamond smile."
+            }
+        },
+        "locationPage": {
+            "title": "Our Location",
+            "subtitle": "Visit us at our exclusive headquarters",
+            "mapBadge": "Exclusive Reference Map",
+            "mapCard": {
+                "name": "Diamond Dental",
+                "category": "Dental clinic in Medellín",
+                "status": "Open",
+                "closesAt": "⋅ Closes at 8:00 PM",
+                "reviews": "273 reviews",
+                "address": "Laureles - Estadio, Medellín, Antioquia",
+                "phone": "+57 314 8311777",
+                "directions": "Get directions",
+                "save": "Save",
+                "nearby": "Nearby",
+                "sendToPhone": "Send to phone",
+                "share": "Share"
+            },
+            "info": {
+                "addressTitle": "Main Address",
+                "addressLine1": "Cl. 51 # 73 -73, Laureles - Estadio,",
+                "addressLine2": "Medellín, Laureles, Medellín, Antioquia",
+                "addressHighlight": "In Front of Centro Comercial El Diamante",
+                "city": "Colombia",
+                "directionsTitle": "How to Get Here",
+                "directionsCar": "Private Vehicle",
+                "directionsCarDesc": "We have access to private parking inside the shopping center for your total comfort.",
+                "directionsPublic": "Public Transit",
+                "directionsPublicDesc": "Nearest metro station: Santa Lucía (10 min walk) or multiple bus routes along Avenida 80.",
+                "scheduleTitle": "Office Hours",
+                "scheduleWeekdays": "Monday to Friday",
+                "scheduleWeekdaysHours": "9:30 AM - 7:00 PM",
+                "scheduleSaturday": "Saturdays",
+                "scheduleSaturdayHours": "9:00 AM - 2:00 PM",
+                "scheduleSunday": "Sundays and Holidays",
+                "scheduleSundayHours": "Closed (Emergency care by appointment only)"
+            }
+        },
+        "legal": {
+            "terms": {
+                "title": "Terms and Conditions",
+                "lastUpdated": "Last updated: February 2026",
+                "introduction": "Welcome to Diamond Dental. By accessing our website and using our services, you agree to comply with the following terms and conditions.",
+                "sections": {
+                    "servicesTitle": "1. Professional Services",
+                    "services": "Diamond Dental provides specialized dentistry services. Results may vary for each patient.",
+                    "servicesExtra": "Our practice is governed by the highest ethical and medical standards. Each diagnosis is personalized and based on clinical evidence.",
+                    "bookingsTitle": "2. Appointment Management",
+                    "bookings": "Appointments must be canceled at least 24 hours in advance.",
+                    "bookingsExtra": "We value the time of our patients and our team. Missed appointments without prior notice may incur administrative charges.",
+                    "paymentsTitle": "3. Payment Agreement",
+                    "payments": "Payments are made according to the agreed treatment plan.",
+                    "paymentsExtra": "We offer payment facilities through bank agreements and direct financing plans for extensive treatments."
+                }
+            },
+            "privacy": {
+                "title": "Privacy Policy",
+                "lastUpdated": "Last updated: February 2026",
+                "content": "At Diamond Dental, we protect your personal data. The information collected is used exclusively for appointment management and direct patient communication.",
+                "rights": "You have the right to know, update, and rectify your information at any time.",
+                "dataTitle": "Data Protection",
+                "dataBody": "Our storage systems comply with medical-grade security protocols. We do not share your information with third parties for commercial purposes.",
+                "rightsTitle": "User Rights",
+                "cookiesTitle": "Cookies and Browsing",
+                "cookiesBody": "We use technical cookies to improve the user experience and analyze traffic anonymously, always guaranteeing your privacy."
+            }
+        },
+        "galleryPage": {
+            "badge": "The Collection",
+            "title": "Diamond\nGallery",
+            "closingQuote": "\"Excellence is not an act, but a habit.\"",
+            "closingLabel": "Diamond Dental · Clinical Standards",
+            "cases": {
+                "1": {
+                    "title": "Total Smile Makeover",
+                    "category": "Ceramic Veneers",
+                    "description": "Full mouth restoration using ultra-thin ceramic veneers for a natural, luminous finish."
+                },
+                "2": {
+                    "title": "Aesthetic Harmony",
+                    "category": "Restoration",
+                    "description": "Minimal intervention focusing on perfecting the smile line and edge harmony."
+                },
+                "3": {
+                    "title": "Vertical Reconstruction",
+                    "category": "Implants",
+                    "description": "Complex rehabilitation restoring both function and aesthetics with high-end implantology."
+                },
+                "4": {
+                    "title": "Digital Design",
+                    "category": "Smile Design",
+                    "description": "Transformation achieved through comprehensive digital planning and precision execution."
+                },
+                "5": {
+                    "title": "Invisible Alignment",
+                    "category": "Invisalign",
+                    "description": "Functional correction using clear aligners for a discreet orthodontic journey."
+                }
             }
         }
     }

@@ -1,0 +1,41 @@
+            },
+            "locationPage": {
+                "title": "Our Location",
+                "subtitle": "Visit us at our exclusive headquarters",
+                "mapCard": {
+                    "name": "Diamond Dental",
+                    "category": "Dental clinic in Medellín",
+                    "status": "Open",
+                    "closesAt": "⋅ Closes at 8:00 p.m.",
+                    "reviews": "273 reviews",
+                    "address": "Laureles - Estadio, Medellín, Antioquia",
+                    "phone": "+57 314 8311777",
+                    "directions": "Directions",
+                    "save": "Save",
+                    "nearby": "Nearby",
+                    "sendToPhone": "Send to phone",
+                    "share": "Share"
+                },
+                "info": {
+                    "addressTitle": "Main Address",
+                    "addressLine1": "Cl. 51 # 73 -73, Laureles - Estadio,",
+                    "addressLine2": "Medellín, Laureles, Medellín, Antioquia",
+                    "addressHighlight": "In front of El Diamante Shopping Center",
+                    "city": "Colombia",
+                    "directionsTitle": "How to Get Here",
+                    "directionsCar": "By Car",
+                    "directionsCarDesc": "We have access to private parking within the shopping center for your total convenience.",
+                    "directionsPublic": "Public Transport",
+                    "directionsPublicDesc": "Nearest metro station: Santa Lucía (10 min walk) or multiple bus routes along Avenida 80.",
+                    "scheduleTitle": "Operating Hours",
+                    "scheduleWeekdays": "Monday to Friday",
+                    "scheduleWeekdaysHours": "9:30 AM - 7:00 PM",
+                    "scheduleSaturday": "Saturdays",
+                    "scheduleSaturdayHours": "9:00 AM - 2:00 PM",
+                    "scheduleSunday": "Sundays and Holidays",
+                    "scheduleSundayHours": "Closed (Emergencies by appointment only)"
+                }
+            }
+        }
+    }
+}
