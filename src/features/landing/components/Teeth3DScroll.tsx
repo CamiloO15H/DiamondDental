@@ -23,9 +23,6 @@ export default function Teeth3DScroll() {
     const text2Opacity = useTransform(scrollYProgress, [0.38, 0.68, 0.88], [0, 1, 0]);
     const text2Y = useTransform(scrollYProgress, [0.38, 0.68, 0.88], [40, 0, -40]);
 
-    // Video Scale: subtle upscale for immersion
-    const videoScale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
-
     // Handle scroll-based video scrubbing
     useMotionValueEvent(scrollYProgress, 'change', (latest) => {
         if (videoRef.current && videoRef.current.duration) {
@@ -37,27 +34,22 @@ export default function Teeth3DScroll() {
     return (
         <div ref={containerRef} className="relative h-[350vh] bg-black">
             {/* Sticky Wrapper: Pins the content to the viewport */}
-            <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-center bg-black px-6 overflow-hidden">
+            <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-center bg-black overflow-hidden">
                 
-                {/* 3D Teeth Video: Kept with official colors (no darkening mask) and crisp bounded dimensions */}
-                <motion.div 
-                    style={{ scale: videoScale }}
-                    className="relative w-full max-w-4xl aspect-video mx-auto overflow-hidden rounded-2xl border border-white/10 bg-black shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-10"
-                >
-                    <video
-                        ref={videoRef}
-                        src="/images/3D/3D-Dientes.mp4"
-                        muted
-                        playsInline
-                        preload="auto"
-                        className="w-full h-full object-cover opacity-100 select-none"
-                    />
-                </motion.div>
+                {/* 3D Teeth Video: Full screen with 70% opacity for better text contrast */}
+                <video
+                    ref={videoRef}
+                    src="/images/3D/3D-Dientes.mp4"
+                    muted
+                    playsInline
+                    preload="auto"
+                    className="absolute inset-0 w-full h-full object-cover opacity-70 select-none pointer-events-none"
+                />
 
                 {/* FIRST TEXT SECTION: Initial Hero Hook */}
                 <motion.div
                     style={{ opacity: text1Opacity, y: text1Y }}
-                    className="absolute z-30 text-center px-6 max-w-7xl flex flex-col items-center justify-center pointer-events-none"
+                    className="relative z-30 text-center px-6 max-w-7xl flex flex-col items-center justify-center pointer-events-none"
                 >
                     <motion.span
                         initial={{ opacity: 0, y: 20 }}
