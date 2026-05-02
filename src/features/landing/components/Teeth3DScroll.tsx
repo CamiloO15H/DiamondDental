@@ -63,18 +63,18 @@ export default function Teeth3DScroll() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2, delay: 0.2, ease: 'easeOut' }}
-                        className="text-4xl md:text-7xl lg:text-8xl xl:text-[95px] font-serif text-white mb-6 leading-[0.95] tracking-tight uppercase"
+                        className="text-5xl md:text-8xl lg:text-9xl xl:text-[110px] font-serif text-white mb-6 leading-[0.95] tracking-tight uppercase"
                     >
-                        Diseñamos tu<br />
-                        <span className="italic text-gold-muted/90">sonrisa Diamond</span>
+                        Diamond<br />
+                        <span className="italic text-gold-muted/90">Dental</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2, delay: 0.4, ease: 'easeOut' }}
-                        className="text-xs md:text-lg font-sans font-light text-white/80 max-w-2xl mx-auto tracking-wide leading-relaxed"
+                        className="text-xs md:text-lg font-sans font-light text-white/80 max-w-2xl mx-auto tracking-wide leading-relaxed uppercase"
                     >
-                        Fusionamos la ingeniería dental más avanzada con el arte estético para crear sonrisas que deslumbran.
+                        Tu sonrisa en manos de especialistas
                     </motion.p>
                 </motion.div>
 
