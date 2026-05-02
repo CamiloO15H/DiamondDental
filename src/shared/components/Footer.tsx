@@ -48,6 +48,19 @@ const FacebookIcon = () => (
     </svg>
 );
 
+const WhatsAppIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11 8.38 8.38 0 0 1 3.8.9L21 3.5Z" />
+        <path d="M17.4 11a4.3 4.3 0 0 0-4.3-4.3H13v1.8h.1A2.5 2.5 0 0 1 15.6 11Z" />
+    </svg>
+);
+
+const TikTokIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5h-1a5 5 0 0 1-5-5" />
+    </svg>
+);
+
 const fadeUp = {
     hidden: { opacity: 0, y: 20 },
     visible: (i: number) => ({
@@ -159,7 +172,6 @@ export default function Footer() {
                             </ul>
                         </m.div>
 
-                        {/* Column 3: Schedule & Social */}
                         <m.div
                             variants={fadeUp}
                             initial="hidden"
@@ -168,24 +180,6 @@ export default function Footer() {
                             custom={2}
                             className="flex flex-col items-center md:items-start"
                         >
-                            <h4 className="text-[10px] uppercase tracking-[0.5em] text-white/30 font-bold mb-6 ml-[0.5em]">
-                                {t("schedule.title")}
-                            </h4>
-                            <ul className="space-y-3 text-sm text-white/50 mb-10">
-                                <li className="flex items-center gap-3">
-                                    <span className="text-white/30"><ClockIcon /></span>
-                                    {t("schedule.weekdays")}
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <span className="text-white/30"><ClockIcon /></span>
-                                    {t("schedule.saturday")}
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <span className="text-white/30"><ClockIcon /></span>
-                                    {t("schedule.sunday")}
-                                </li>
-                            </ul>
-
                             <h4 className="text-[10px] uppercase tracking-[0.5em] text-white/30 font-bold mb-5 ml-[0.5em]">
                                 {t("social.title")}
                             </h4>
@@ -208,6 +202,24 @@ export default function Footer() {
                                 >
                                     <FacebookIcon />
                                 </a>
+                                <a
+                                    href="https://wa.me/573148311777"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-white/30 hover:text-white/80 transition-colors duration-300"
+                                    aria-label="WhatsApp"
+                                >
+                                    <WhatsAppIcon />
+                                </a>
+                                <a
+                                    href="https://www.tiktok.com/@diamondental.clinica"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-white/30 hover:text-white/80 transition-colors duration-300"
+                                    aria-label="TikTok"
+                                >
+                                    <TikTokIcon />
+                                </a>
                             </div>
                         </m.div>
                     </div>
@@ -229,11 +241,11 @@ export default function Footer() {
                             </Link>
                         </div>
                         <span className="text-white/15">
-                            {t("designedBy")}{" "}
+                            Diseño y Desarrollo por{" "}
                             <span
                                 className="text-white/30 hover:text-white/60 transition-colors duration-300 cursor-default"
                             >
-                                Studio K
+                                Camilo Ospina
                             </span>
                         </span>
                     </div>
