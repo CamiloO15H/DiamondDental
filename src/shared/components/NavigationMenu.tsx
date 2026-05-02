@@ -78,8 +78,15 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
                             exit="closed"
                             className="fixed top-0 right-0 h-full w-full sm:w-[450px] z-[200] bg-[#0d0d0d]/90 backdrop-blur-2xl border-l border-white/10 flex flex-col p-12 pointer-events-auto"
                         >
-                            {/* Close Button */}
-                            <div className="flex justify-end mb-20">
+                            {/* Sidebar Header with Logo and Close button */}
+                            <div className="flex items-center justify-between mb-16">
+                                <Image
+                                    src="/images/logo-diamond.png"
+                                    alt="Diamond Logo"
+                                    width={48}
+                                    height={48}
+                                    className="object-contain brightness-110"
+                                />
                                 <button
                                     onClick={onClose}
                                     className="group p-4 -mr-4 text-white/50 hover:text-white transition-colors"
@@ -98,7 +105,7 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
                                         <Link
                                             href={item.href}
                                             onClick={onClose}
-                                            className="text-3xl md:text-4xl font-serif uppercase tracking-tight text-white/70 hover:text-white transition-all duration-300 hover:pl-4"
+                                            className="text-2xl md:text-3xl font-serif uppercase tracking-tight text-white/70 hover:text-white transition-all duration-300 hover:pl-4"
                                         >
                                             {item.label}
                                         </Link>
@@ -119,16 +126,6 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
                                 </button>
                             </m.div>
 
-                            {/* Decorative Diamond Element */}
-                            <div className="mt-auto flex justify-center opacity-10">
-                                <Image
-                                    src="/images/logo-diamond.png"
-                                    alt="Diamond"
-                                    width={128}
-                                    height={128}
-                                    className="grayscale"
-                                />
-                            </div>
                         </m.div>
                     </>
                 )}
