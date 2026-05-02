@@ -36,6 +36,7 @@ export default function HomeIntroduction() {
 
                          <iframe
                             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F973238971722405&show_text=0&t=0"
+                            title="Introduction Video"
                             className="w-full h-full border-none overflow-hidden"
                             scrolling="no"
                             allowFullScreen={true}

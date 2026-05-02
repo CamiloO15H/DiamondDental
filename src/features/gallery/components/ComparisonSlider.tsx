@@ -97,13 +97,10 @@ const ComparisonSlider = ({
             <div
                 ref={containerRef}
                 className={cn(
-                    "relative overflow-hidden select-none group bg-diamond-charcoal",
+                    "relative overflow-hidden select-none group bg-diamond-charcoal touch-pan-y",
                     aspectClasses[aspectRatio],
                     className
                 )}
-                style={{
-                    touchAction: 'pan-y'
-                }}
             >
                 {/* After Image (Base) */}
                 <div className="absolute inset-0">
@@ -163,9 +160,9 @@ const ComparisonSlider = ({
                     <div
                         className="absolute top-[75%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 cursor-ew-resize"
                         role="slider"
-                        aria-valuemin={0}
-                        aria-valuemax={100}
-                        aria-valuenow={Math.round(sliderPos)}
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow={String(Math.round(sliderPos))}
                         aria-label="Comparison slider"
                         tabIndex={0}
                         onMouseDown={handleMouseDown}

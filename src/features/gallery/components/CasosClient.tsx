@@ -172,6 +172,7 @@ export default function CasosClient() {
                                 <div className="relative aspect-[9/16] w-full max-w-[380px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
                                     <iframe
                                         src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F941427089043340%2F&show_text=0&t=0"
+                                        title="Testimonial Video"
                                         className="w-full h-full border-none overflow-hidden"
                                         scrolling="no"
                                         allowFullScreen={true}
