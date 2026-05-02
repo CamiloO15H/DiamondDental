@@ -9,10 +9,10 @@ import { WhatsAppLinkGenerator } from "@/core/utils/WhatsAppLinkGenerator";
 const serviceList = [
     {
         id: "smileDesign",
-        image: "/images/Casos/IMG_6668.PNG",
+        image: "/images/Actualizaciones/DientesUnicaMirada.jpeg",
         icon: Zap,
         accent: "from-white/10 to-white/5",
-        imgPosition: "object-[center_20%]"
+        imgPosition: "object-center"
     },
     {
         id: "orthodontics",
