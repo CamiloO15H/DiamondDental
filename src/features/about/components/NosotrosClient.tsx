@@ -4,9 +4,12 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Diamond, Microscope, Sparkles, HeartHandshake, BookOpen } from "lucide-react";
+import TeamIntroduction from "@/features/landing/components/TeamIntroduction";
+import MeetTheExperts from "@/features/landing/components/MeetTheExperts";
 
 export default function NosotrosClient() {
     const t = useTranslations("Index.nosotros");
+
 
     return (
         <LazyMotion features={domAnimation}>
@@ -236,7 +239,12 @@ export default function NosotrosClient() {
                         </div>
                     </div>
                 </section>
+
+                {/* Submódulo de los Integrantes y Especialistas de Diamond Dental */}
+                <TeamIntroduction />
+                <MeetTheExperts />
             </main>
         </LazyMotion>
     );
 }
+
