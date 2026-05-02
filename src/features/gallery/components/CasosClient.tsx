@@ -126,7 +126,7 @@ export default function CasosClient() {
 
                     {/* Face Transformation Spotlight (The Global Impact) */}
                     <section className="mb-40">
-                        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-16 items-center">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                             <div className="space-y-10">
                                 <m.div
                                     initial={{ opacity: 0, x: -20 }}
@@ -152,7 +152,7 @@ export default function CasosClient() {
                                 </div>
                             </div>
 
-                            <div className="relative aspect-[4/3] rounded-[40px] overflow-hidden border border-white/10 shadow-2xl group">
+                            <div className="relative aspect-[4/3] max-w-xl mx-auto w-full rounded-[40px] overflow-hidden border border-white/10 shadow-2xl group">
                                 <ComparisonSlider
                                     beforeImage="/images/results/case1-before.jpg"
                                     afterImage="/images/results/case1-after.jpg"
