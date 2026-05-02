@@ -98,7 +98,7 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
                                         <Link
                                             href={item.href}
                                             onClick={onClose}
-                                            className="text-4xl md:text-5xl font-playfair italic text-white/70 hover:text-white transition-all duration-300 hover:pl-4"
+                                            className="text-3xl md:text-4xl font-serif uppercase tracking-tight text-white/70 hover:text-white transition-all duration-300 hover:pl-4"
                                         >
                                             {item.label}
                                         </Link>
