@@ -109,16 +109,16 @@ export default function ServiciosClient() {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true, margin: "-100px" }}
                                         transition={{ duration: 0.8, delay: 0.1 }}
-                                        className="relative group bg-white border border-white/10 rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-[0_40px_100px_rgba(0,0,0,0.15)] max-w-6xl mx-auto w-full mb-12"
+                                        className="relative group bg-white border border-white/10 rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] shadow-[0_40px_100px_rgba(0,0,0,0.15)] max-w-6xl mx-auto w-full mb-12"
                                     >
                                         {/* Lado A: Image pinned flush to edges on left */}
-                                        <div className="relative aspect-[4/3] lg:aspect-auto w-full h-full min-h-[450px] lg:min-h-[550px] bg-black overflow-hidden">
+                                        <div className="relative aspect-[4/3] lg:aspect-auto w-full h-full min-h-[450px] lg:min-h-[550px] overflow-hidden">
                                             <Image
                                                 src={service.image}
                                                 alt={serviceTitle}
                                                 fill
                                                 sizes="(max-width: 1024px) 100vw, 50vw"
-                                                className="object-contain object-center bg-black group-hover:scale-102 transition-all duration-1000"
+                                                className="object-cover object-center group-hover:scale-105 transition-all duration-1000"
                                             />
                                         </div>
 
@@ -241,13 +241,13 @@ export default function ServiciosClient() {
                                     src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F762811929834230%2F&show_text=false&width=267&t=0"
                                     width="100%"
                                     height="100%"
-                                    style={{ border: 'none', overflow: 'hidden' }}
+                                    title="Diamond Stories Video 1"
                                     scrolling="no"
                                     frameBorder="0"
                                     allowFullScreen={true}
                                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                                     loading="lazy"
-                                    className="absolute inset-0 w-full h-full z-0"
+                                    className="absolute inset-0 w-full h-full z-0 border-0 overflow-hidden"
                                 ></iframe>
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80 z-10 pointer-events-none"></div>
                                 <div className="absolute bottom-0 left-0 right-0 p-6 z-20 pointer-events-none">
@@ -265,13 +265,13 @@ export default function ServiciosClient() {
                                     src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1150623530253168%2F&show_text=false&width=267&t=0"
                                     width="100%"
                                     height="100%"
-                                    style={{ border: 'none', overflow: 'hidden' }}
+                                    title="Diamond Stories Video 2"
                                     scrolling="no"
                                     frameBorder="0"
                                     allowFullScreen={true}
                                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                                     loading="lazy"
-                                    className="absolute inset-0 w-full h-full z-0"
+                                    className="absolute inset-0 w-full h-full z-0 border-0 overflow-hidden"
                                 ></iframe>
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80 z-10 pointer-events-none"></div>
                                 <div className="absolute bottom-0 left-0 right-0 p-6 z-20 pointer-events-none">
@@ -289,13 +289,13 @@ export default function ServiciosClient() {
                                     src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F829104302311905%2F&show_text=false&width=267&t=0"
                                     width="100%"
                                     height="100%"
-                                    style={{ border: 'none', overflow: 'hidden' }}
+                                    title="Diamond Stories Video 3"
                                     scrolling="no"
                                     frameBorder="0"
                                     allowFullScreen={true}
                                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                                     loading="lazy"
-                                    className="absolute inset-0 w-full h-full z-0"
+                                    className="absolute inset-0 w-full h-full z-0 border-0 overflow-hidden"
                                 ></iframe>
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80 z-10 pointer-events-none"></div>
                                 <div className="absolute bottom-0 left-0 right-0 p-6 z-20 pointer-events-none">
