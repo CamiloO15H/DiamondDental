@@ -218,7 +218,7 @@ export default function CasosClient() {
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1 }}
-                            className="relative aspect-video w-full max-w-4xl rounded-3xl overflow-hidden border border-white/10 group shadow-[0_40px_100px_rgba(0,0,0,0.6)] bg-[#0a0a0a]"
+                            className="relative aspect-video w-full max-w-5xl rounded-3xl overflow-hidden border border-white/10 group shadow-[0_40px_100px_rgba(0,0,0,0.6)] bg-[#0a0a0a]"
                         >
                             <Image360Viewer />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
@@ -244,10 +244,10 @@ export default function CasosClient() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
-                                "/images/Casos-Comparativos/Caso1-2.jpeg",
-                                "/images/Casos-Comparativos/Caso3-4.jpeg",
+                                "/images/Actualizaciones/DientesMirandoLadoIzquierdo.jpeg",
+                                "/images/Actualizaciones/SonrisaFrontal.png",
                                 "/images/Casos-Comparativos/Caso5-6.jpeg",
-                                "/images/Casos-Comparativos/Caso7-8.jpeg",
+                                "/images/Actualizaciones/DientesMirandoLadoDerecho.jpeg",
                                 "/images/Casos-Comparativos/Caso9-10.jpeg",
                                 "/images/Casos-Comparativos/Caso11-12.jpeg"
                             ].map((src, index) => (
