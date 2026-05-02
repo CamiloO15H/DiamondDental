@@ -34,8 +34,8 @@ export default function HomeIntroduction() {
                         {/* Subtle inner glow for depth */}
                         <div className="absolute inset-0 z-20 pointer-events-none border border-white/5 rounded-3xl"></div>
 
-                        <iframe
-                            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1734862043830650%2F&show_text=0&t=0"
+                         <iframe
+                            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F18YdATN5TS%2F&show_text=0&t=0"
                             className="w-full h-full border-none overflow-hidden"
                             scrolling="no"
                             allowFullScreen={true}
@@ -58,10 +58,10 @@ export default function HomeIntroduction() {
                 >
                     <div className="space-y-4">
                         <span className="text-white/40 font-sans text-[10px] tracking-[0.5em] uppercase font-bold">
-                            Diamond Sanctuary
+                            planificación digital
                         </span>
                         <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white uppercase leading-[0.9] tracking-tight whitespace-pre-line py-2">
-                            {t('title')}
+                            tecnología a la vanguardia
                         </h2>
                     </div>
 
