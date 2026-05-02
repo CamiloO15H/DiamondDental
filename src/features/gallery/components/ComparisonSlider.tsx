@@ -159,12 +159,6 @@ const ComparisonSlider = ({
                     {/* Branding Isotype - Fine Outline Diamond: Positioned at neck level to avoid face obstruction */}
                     <div
                         className="absolute top-[75%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 cursor-ew-resize"
-                        role="slider"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        aria-valuenow={String(Math.round(sliderPos))}
-                        aria-label="Comparison slider"
-                        tabIndex={0}
                         onMouseDown={handleMouseDown}
                         onTouchStart={handleTouchStart}
                     >

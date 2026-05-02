@@ -39,8 +39,7 @@ function Image360Viewer() {
         <div
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="w-full h-full relative overflow-hidden flex items-center justify-center transform-gpu select-none"
-            style={{ perspective: 1200 }}
+            className="w-full h-full relative overflow-hidden flex items-center justify-center transform-gpu select-none [perspective:1200px]"
         >
             <m.div
                 style={{
