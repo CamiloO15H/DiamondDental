@@ -51,14 +51,6 @@ export default function Teeth3DScroll() {
                     style={{ opacity: text1Opacity, y: text1Y }}
                     className="relative z-30 text-center px-6 max-w-7xl flex flex-col items-center justify-center pointer-events-none"
                 >
-                    <motion.span
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1.2, ease: 'easeOut' }}
-                        className="text-[10px] md:text-sm text-white/60 tracking-[0.6em] uppercase font-bold block mb-4"
-                    >
-                        Diamond 3D Experience
-                    </motion.span>
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
