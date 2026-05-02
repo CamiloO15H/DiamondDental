@@ -1,6 +1,6 @@
 "use client";
 
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import { LazyMotion, domAnimation, m, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 import MuseumGallery from "@/features/gallery/components/MuseumGallery";
 import ComparisonSlider from "@/features/gallery/components/ComparisonSlider";
@@ -8,6 +8,62 @@ import { ArrowLeft, Diamond, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import Image from "next/image";
+
+function Image360Viewer() {
+    const x = useMotionValue(0.5);
+    const y = useMotionValue(0.5);
+
+    const springConfig = { damping: 25, stiffness: 120 };
+    const xSpring = useSpring(x, springConfig);
+    const ySpring = useSpring(y, springConfig);
+
+    const translateX = useTransform(xSpring, [0, 1], ["-8%", "8%"]);
+    const translateY = useTransform(ySpring, [0, 1], ["-8%", "8%"]);
+    const rotateX = useTransform(ySpring, [0, 1], [6, -6]);
+    const rotateY = useTransform(xSpring, [0, 1], [-6, 6]);
+
+    const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+        const rect = event.currentTarget.getBoundingClientRect();
+        const mouseX = (event.clientX - rect.left) / rect.width;
+        const mouseY = (event.clientY - rect.top) / rect.height;
+        x.set(mouseX);
+        y.set(mouseY);
+    };
+
+    const handleMouseLeave = () => {
+        x.set(0.5);
+        y.set(0.5);
+    };
+
+    return (
+        <div
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            className="w-full h-full relative overflow-hidden flex items-center justify-center transform-gpu select-none"
+            style={{ perspective: 1200 }}
+        >
+            <m.div
+                style={{
+                    x: translateX,
+                    y: translateY,
+                    rotateX: rotateX,
+                    rotateY: rotateY,
+                    width: "116%",
+                    height: "116%",
+                    position: "absolute",
+                }}
+                className="transform-gpu will-change-transform"
+            >
+                <Image
+                    src="/images/3D/360.png"
+                    alt="Micro-texturizado Cerámico 360"
+                    fill
+                    className="object-cover pointer-events-none"
+                />
+            </m.div>
+        </div>
+    );
+}
 
 export default function CasosClient() {
     const t = useTranslations("Index");
@@ -147,21 +203,26 @@ export default function CasosClient() {
                     </section>
 
                     {/* Macro Texture Section */}
-                    <section className="mb-40 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <section className="mb-40 flex flex-col items-center gap-16">
+                        <div className="max-w-4xl text-center space-y-6">
+                            <div className="relative">
+                                <span className="text-gold-muted/20 text-[120px] font-serif absolute -top-16 left-1/2 -translate-x-1/2 pointer-events-none select-none">“</span>
+                                <h2 className="text-white font-serif text-4xl md:text-5xl leading-tight mb-6 italic uppercase">{t("casos.macro.quote")}</h2>
+                                <p className="text-white/60 text-lg md:text-xl leading-relaxed font-light max-w-2xl mx-auto">
+                                    {t("casos.macro.body")}
+                                </p>
+                            </div>
+                        </div>
+
                         <m.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1 }}
-                            className="relative aspect-square rounded-3xl overflow-hidden border border-white/10 group shadow-[0_40px_100px_rgba(0,0,0,0.6)] bg-[#0a0a0a]"
+                            className="relative aspect-video w-full max-w-4xl rounded-3xl overflow-hidden border border-white/10 group shadow-[0_40px_100px_rgba(0,0,0,0.6)] bg-[#0a0a0a]"
                         >
-                            <Image
-                                src="/images/LenteCeramico.jpeg"
-                                alt={t("casos.macro.title")}
-                                fill
-                                className="object-cover"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                            <div className="absolute bottom-10 left-10">
+                            <Image360Viewer />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                            <div className="absolute bottom-10 left-10 z-20 pointer-events-none">
                                 <h3 className="text-white font-serif text-4xl italic uppercase">{t("casos.macro.title")}</h3>
                                 <p className="text-white/50 text-xs tracking-widest uppercase mt-3 flex items-center gap-3">
                                     <Sparkles className="w-3 h-3 text-gold-muted" />
@@ -169,16 +230,6 @@ export default function CasosClient() {
                                 </p>
                             </div>
                         </m.div>
-
-                        <div className="space-y-10 lg:pl-12">
-                            <div className="relative">
-                                <span className="text-gold-muted/20 text-[120px] font-serif absolute -top-16 -left-8 pointer-events-none select-none">“</span>
-                                <h2 className="text-white font-serif text-4xl md:text-5xl leading-tight mb-8 italic uppercase">{t("casos.macro.quote")}</h2>
-                                <p className="text-white/60 text-lg leading-relaxed font-light mb-10">
-                                    {t("casos.macro.body")}
-                                </p>
-                            </div>
-                        </div>
                     </section>
 
                     {/* Comparative Cases Section */}
