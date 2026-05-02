@@ -109,7 +109,7 @@ export default function ServiciosClient() {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true, margin: "-100px" }}
                                         transition={{ duration: 0.8, delay: 0.1 }}
-                                        className="relative group bg-white border border-white/10 rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] shadow-[0_40px_100px_rgba(0,0,0,0.15)] max-w-6xl mx-auto w-full mb-12"
+                                        className="relative group bg-white border border-white/10 rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] shadow-[0_40px_100px_rgba(0,0,0,0.15)] max-w-6xl mx-auto w-full mb-12"
                                     >
                                         {/* Lado A: Image pinned flush to edges on left */}
                                         <div className="relative aspect-[4/3] lg:aspect-auto w-full h-full min-h-[450px] lg:min-h-[550px] overflow-hidden">

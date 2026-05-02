@@ -15,8 +15,7 @@ const TeamIntroduction = () => {
                 whileInView={{ opacity: 0.05, rotate: 0, scale: 1 }}
                 transition={{ duration: 2, ease: "easeOut" }}
                 viewport={{ once: false }}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-white opacity-5 pointer-events-none hidden md:block"
-                style={{ borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' }}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-white opacity-5 pointer-events-none hidden md:block rounded-full"
             />
 
             <div className="container mx-auto px-6 relative z-10">

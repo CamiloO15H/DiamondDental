@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState } from "react";
 import { LazyMotion, domAnimation, m, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -46,6 +47,7 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
     const params = useParams();
     const locale = params?.locale as string || "es";
     const { openBooking } = useBooking();
+    const [isNosotrosOpen, setIsNosotrosOpen] = useState(false);
 
     const menuItems = [
         { label: t("home"), href: `/${locale}` },
@@ -97,20 +99,65 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
 
                             {/* Navigation Links */}
                             <nav className="flex flex-col gap-8">
-                                {menuItems.map((item) => (
-                                    <m.div
-                                        key={item.label}
-                                        variants={itemVariants}
-                                    >
-                                        <Link
-                                            href={item.href}
-                                            onClick={onClose}
-                                            className="text-2xl md:text-3xl font-serif uppercase tracking-tight text-white/70 hover:text-white transition-all duration-300 hover:pl-4"
+                                {menuItems.map((item) => {
+                                    if (item.label === t("nosotros")) {
+                                        return (
+                                            <m.div
+                                                key={item.label}
+                                                variants={itemVariants}
+                                                className="relative group flex flex-col"
+                                                onMouseEnter={() => setIsNosotrosOpen(true)}
+                                                onMouseLeave={() => setIsNosotrosOpen(false)}
+                                            >
+                                                <div className="flex items-center justify-between text-2xl md:text-3xl font-serif uppercase tracking-tight text-white/70 group-hover:text-white transition-all duration-300 hover:pl-4 cursor-pointer select-none">
+                                                    {item.label}
+                                                    <span className="text-sm text-white/30 group-hover:text-gold-muted transition-all ml-4">▼</span>
+                                                </div>
+                                                <AnimatePresence>
+                                                    {isNosotrosOpen && (
+                                                        <m.div
+                                                            initial={{ opacity: 0, height: 0 }}
+                                                            animate={{ opacity: 1, height: "auto" }}
+                                                            exit={{ opacity: 0, height: 0 }}
+                                                            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                                                            className="flex flex-col pl-8 mt-4 gap-4 overflow-hidden"
+                                                        >
+                                                            <Link
+                                                                href={`/${locale}/legado`}
+                                                                onClick={onClose}
+                                                                className="text-lg md:text-xl font-serif uppercase tracking-tight text-white/60 hover:text-white transition-all duration-300 hover:pl-2"
+                                                            >
+                                                                Legado
+                                                            </Link>
+                                                            <Link
+                                                                href={`/${locale}/team`}
+                                                                onClick={onClose}
+                                                                className="text-lg md:text-xl font-serif uppercase tracking-tight text-white/60 hover:text-white transition-all duration-300 hover:pl-2"
+                                                            >
+                                                                Nuestro Team
+                                                            </Link>
+                                                        </m.div>
+                                                    )}
+                                                </AnimatePresence>
+                                            </m.div>
+                                        );
+                                    }
+
+                                    return (
+                                        <m.div
+                                            key={item.label}
+                                            variants={itemVariants}
                                         >
-                                            {item.label}
-                                        </Link>
-                                    </m.div>
-                                ))}
+                                            <Link
+                                                href={item.href}
+                                                onClick={onClose}
+                                                className="text-2xl md:text-3xl font-serif uppercase tracking-tight text-white/70 hover:text-white transition-all duration-300 hover:pl-4"
+                                            >
+                                                {item.label}
+                                            </Link>
+                                        </m.div>
+                                    );
+                                })}
                             </nav>
 
                             {/* CTA Button */}
