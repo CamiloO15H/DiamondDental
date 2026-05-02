@@ -101,6 +101,62 @@ export default function ServiciosClient() {
                             const serviceTitle = t(`list.${service.id}.title`);
                             const waLink = WhatsAppLinkGenerator.generateGenericLink(t('whatsappMessage', { serviceTitle }));
 
+                            if (service.id === "smileDesign") {
+                                return (
+                                    <m.section
+                                        key={service.id}
+                                        initial={{ opacity: 0, y: 40 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true, margin: "-100px" }}
+                                        transition={{ duration: 0.8, delay: 0.1 }}
+                                        className="relative group bg-white border border-white/10 rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-[0_40px_100px_rgba(0,0,0,0.15)] max-w-6xl mx-auto w-full mb-12"
+                                    >
+                                        {/* Lado A: Image pinned flush to edges on left */}
+                                        <div className="relative aspect-[4/3] lg:aspect-auto w-full h-full min-h-[450px] lg:min-h-[550px] bg-black overflow-hidden">
+                                            <Image
+                                                src={service.image}
+                                                alt={serviceTitle}
+                                                fill
+                                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                                className="object-contain object-center bg-black group-hover:scale-102 transition-all duration-1000"
+                                            />
+                                        </div>
+
+                                        {/* Lado B: Text Content with elegant white background */}
+                                        <div className="flex flex-col justify-center p-10 md:p-14 lg:p-16 relative bg-white select-none">
+                                            <service.icon className="w-10 h-10 text-gold-dark mb-6 group-hover:scale-110 transition-transform duration-500" />
+
+                                            <h2 className="text-4xl md:text-5xl font-serif text-black mb-4 transition-colors duration-500">
+                                                <span>
+                                                    {serviceTitle.split(' ')[0]}
+                                                </span>
+                                                {" "}
+                                                <span className="italic font-light">
+                                                    {serviceTitle.split(' ').slice(1).join(' ')}
+                                                </span>
+                                            </h2>
+
+                                            <p className="text-black/70 text-base md:text-lg font-light leading-relaxed mb-8">
+                                                {t(`list.${service.id}.description`)}
+                                            </p>
+
+                                            {/* Action Button */}
+                                            <div className="flex items-center gap-6">
+                                                <a
+                                                    href={waLink}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-black/10 bg-black text-white text-sm font-sans font-bold hover:bg-gold-dark transition-all duration-300 transform hover:scale-105"
+                                                >
+                                                    <MessageCircle className="w-4 h-4" />
+                                                    {t("cta")}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </m.section>
+                                );
+                            }
+
                             return (
                                 <m.section
                                     key={service.id}
