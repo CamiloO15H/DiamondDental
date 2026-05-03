@@ -129,6 +129,7 @@ export default function PatientReviews() {
                             aria-label="Previous Review"
                             className="w-10 h-10 rounded-full border border-white/5 flex items-center justify-center text-white/30 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all duration-300 pointer-events-auto"
                         >
+                            <span className="sr-only">Previous Review</span>
                             <ChevronLeft className="w-4 h-4" />
                         </button>
                         <button
@@ -137,6 +138,7 @@ export default function PatientReviews() {
                             aria-label="Next Review"
                             className="w-10 h-10 rounded-full border border-white/5 flex items-center justify-center text-white/30 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all duration-300 pointer-events-auto"
                         >
+                            <span className="sr-only">Next Review</span>
                             <ChevronRight className="w-4 h-4" />
                         </button>
                     </div>
