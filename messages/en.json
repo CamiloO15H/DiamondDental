@@ -120,17 +120,17 @@
                         "Oral Rehabilitation"
                     ]
                 },
-                "paula": {
-                    "name": "Dr. Paula López",
-                    "role": "Aesthetic Dentist",
-                    "quote": "Each smile is a unique canvas waiting to reveal its full splendor.",
-                    "bio": "Dedicated to high-precision Aesthetic Dentistry. Her passion is to restore functionality and perfect aesthetics, combining art and science for surprising and lasting results.",
-                    "specialty": "Aesthetic Dentistry & Pediatric Dentistry",
+                "sara": {
+                    "name": "Dr. Sara Vaca Muriel",
+                    "role": "Endodontist",
+                    "quote": "High-precision dental preservation is the cornerstone of oral health.",
+                    "bio": "Specialist in advanced Endodontics. She uses advanced magnification techniques and cutting-edge technology to perform painless root canal treatments, preserving the natural structure of your teeth with maximum precision.",
+                    "specialty": "Advanced Endodontics",
                     "services": [
-                        "High Aesthetic Resins",
-                        "Dental Inlays",
-                        "Gingival Contouring",
-                        "Premium Pediatric Dentistry"
+                        "Root Canal Treatments",
+                        "High Precision Endodontics",
+                        "Dental Preservation",
+                        "Digital Diagnosis"
                     ]
                 },
                 "julio": {

@@ -28,10 +28,10 @@ const teamMembers = [
         instagram: 'https://www.instagram.com/odontologo_jhonestebangarcia/'
     },
     {
-        id: 'paula',
-        image: '/images/team/Paula.PNG',
-        key: 'paula',
-        instagram: 'https://www.instagram.com/paula.andrea.lopez/'
+        id: 'sara',
+        image: '/images/Actualizaciones/SaraVaca.png',
+        key: 'sara',
+        instagram: 'https://www.instagram.com/saravaca'
     },
     {
         id: 'camila',

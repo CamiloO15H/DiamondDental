@@ -120,17 +120,17 @@
                         "Rehabilitación Oral"
                     ]
                 },
-                "paula": {
-                    "name": "Dra. Paula López",
-                    "role": "Odontóloga Estética",
-                    "quote": "Cada sonrisa es un lienzo único esperando revelar su máximo esplendor.",
-                    "bio": "Dedicada a la Odontología Estética de alta precisión. Su pasión es devolver la funcionalidad y la estética perfecta, combinando arte y ciencia para resultados sorprendentes y duraderos.",
-                    "specialty": "Odontología Estética & Odontopediatría",
+                "sara": {
+                    "name": "Dra. Sara Vaca Muriel",
+                    "role": "Endodoncista",
+                    "quote": "La preservación dental con alta precisión es el pilar de la salud oral.",
+                    "bio": "Especialista en Endodoncia de vanguardia. Utiliza técnicas de magnificación avanzada y tecnología de última generación para realizar tratamientos de conducto indoloros, conservando la estructura natural de tus dientes con máxima precisión.",
+                    "specialty": "Endodoncia Avanzada",
                     "services": [
-                        "Resinas de Alta Estética",
-                        "Incrustaciones Dentales",
-                        "Contorneado Gingival",
-                        "Odontopediatría Premium"
+                        "Tratamientos de Conducto",
+                        "Endodoncia de Alta Precisión",
+                        "Preservación Dental",
+                        "Diagnóstico Digital"
                     ]
                 },
                 "julio": {
