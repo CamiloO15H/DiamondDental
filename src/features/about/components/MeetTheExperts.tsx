@@ -168,7 +168,7 @@ const MeetTheExperts = () => {
                     className="absolute inset-0"
                 >
                     <Image
-                        src="/images/Actualizaciones/LauraJulioCamila.JPEG"
+                        src="/images/Actualizaciones/LauraJulioCamila.jpeg"
                         alt="Diamond Dental Team Ensemble"
                         fill
                         className="object-cover object-top grayscale opacity-80"
