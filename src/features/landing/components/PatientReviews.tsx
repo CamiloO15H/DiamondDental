@@ -125,12 +125,16 @@ export default function PatientReviews() {
                     <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 w-full hidden lg:flex justify-between pointer-events-none z-30">
                         <button
                             onClick={prevReview}
+                            title="Previous Review"
+                            aria-label="Previous Review"
                             className="w-10 h-10 rounded-full border border-white/5 flex items-center justify-center text-white/30 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all duration-300 pointer-events-auto"
                         >
                             <ChevronLeft className="w-4 h-4" />
                         </button>
                         <button
                             onClick={nextReview}
+                            title="Next Review"
+                            aria-label="Next Review"
                             className="w-10 h-10 rounded-full border border-white/5 flex items-center justify-center text-white/30 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all duration-300 pointer-events-auto"
                         >
                             <ChevronRight className="w-4 h-4" />

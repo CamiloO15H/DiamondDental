@@ -192,6 +192,8 @@ export default function ResenasClient() {
                         >
                             <button
                                 onClick={() => setSelectedVideo(null)}
+                                title="Close"
+                                aria-label="Close"
                                 className="absolute top-6 right-6 md:top-8 md:right-8 text-white/50 hover:text-white transition-colors z-50"
                             >
                                 <X className="w-8 h-8 md:w-10 md:h-10" />
