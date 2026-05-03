@@ -159,7 +159,7 @@ const MeetTheExperts = () => {
             })}
 
             {/* GROUP PHOTO: FINAL SECTION */}
-            <div className="w-full h-screen relative overflow-hidden flex items-center justify-center">
+            <div className="w-full h-screen relative overflow-hidden flex items-end justify-center pb-20 md:pb-24">
                 <motion.div
                     initial={{ scale: 1.05, y: 50 }}
                     whileInView={{ scale: 1, y: 0 }}
@@ -168,10 +168,10 @@ const MeetTheExperts = () => {
                     className="absolute inset-0"
                 >
                     <Image
-                        src="/images/team/Equipo-Diamond.JPEG"
+                        src="/images/Actualizaciones/LauraJulioCamila.JPEG"
                         alt="Diamond Dental Team Ensemble"
                         fill
-                        className="object-cover object-center grayscale opacity-80"
+                        className="object-cover object-top grayscale opacity-80"
                         sizes="100vw"
                         loading="lazy"
                     />
