@@ -58,11 +58,11 @@ export default function HomeIntroduction() {
                     className="flex flex-col items-start space-y-8 order-1 lg:order-2"
                 >
                     <div className="space-y-4">
-                        <span className="text-white/40 font-sans text-[10px] tracking-[0.5em] uppercase font-bold">
-                            planificación digital
+                        <span className="text-white/40 font-sans text-[10px] tracking-[0.3em] sm:tracking-[0.5em] uppercase font-bold">
+                            {t('badge')}
                         </span>
-                        <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white uppercase leading-[0.9] tracking-tight whitespace-pre-line py-2">
-                            tecnología a la vanguardia
+                        <h2 className="font-serif text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-white uppercase leading-[0.9] tracking-tight break-words py-2">
+                            {t('title')}
                         </h2>
                     </div>
 

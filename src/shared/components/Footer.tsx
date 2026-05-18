@@ -85,12 +85,11 @@ export default function Footer() {
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2!2d-75.5894015!3d6.2605209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44295ab31e4b33%3A0x4703d004a6a94ad4!2sDIAMOND%20DENTAL!5e0!3m2!1ses!2sco!4v1700000000000"
                             width="100%"
                             height="100%"
-                            style={{ border: 0 }}
                             allowFullScreen={false}
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             title="Diamond Dental Location"
-                            className="pointer-events-auto"
+                            className="pointer-events-auto border-0"
                         />
                     </div>
                     {/* Gradient fade into footer content */}
@@ -111,7 +110,7 @@ export default function Footer() {
                             className="flex flex-col items-center md:items-start"
                         >
                             <Image
-                                src="/images/logo-diamond.png"
+                                src="/images/logo-diamond.webp"
                                 alt="Diamond Dental"
                                 width={140}
                                 height={60}
@@ -241,7 +240,7 @@ export default function Footer() {
                             </Link>
                         </div>
                         <span className="text-white/15">
-                            Diseño y Desarrollo por{" "}
+                            {t("designedBy")}{" "}
                             <span
                                 className="text-white/30 hover:text-white/60 transition-colors duration-300 cursor-default"
                             >

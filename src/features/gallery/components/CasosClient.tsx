@@ -2,8 +2,17 @@
 
 import { LazyMotion, domAnimation, m, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
-import MuseumGallery from "@/features/gallery/components/MuseumGallery";
-import ComparisonSlider from "@/features/gallery/components/ComparisonSlider";
+import dynamic from "next/dynamic";
+
+const MuseumGallery = dynamic(() => import("@/features/gallery/components/MuseumGallery"), {
+    ssr: false,
+    loading: () => <div className="h-[400px] w-full bg-[#0d0d0d] animate-pulse flex items-center justify-center text-white/20 tracking-widest text-xs uppercase font-sans">Cargando Museo de Sonrisas...</div>,
+});
+
+const ComparisonSlider = dynamic(() => import("@/features/gallery/components/ComparisonSlider"), {
+    ssr: false,
+    loading: () => <div className="h-full w-full bg-black/40 animate-pulse flex items-center justify-center text-white/20 tracking-widest text-xs uppercase font-sans">Cargando Comparativa...</div>,
+});
 import { ArrowLeft, Diamond, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -54,7 +63,7 @@ function Image360Viewer() {
                 className="transform-gpu will-change-transform"
             >
                 <Image
-                    src="/images/3D/360.png"
+                    src="/images/3D/360.webp"
                     alt="Micro-texturizado Cerámico 360"
                     fill
                     className="object-cover pointer-events-none"
@@ -105,7 +114,7 @@ export default function CasosClient() {
                                     initial={{ opacity: 0, y: 30 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 }}
-                                    className="text-6xl md:text-8xl lg:text-9xl font-serif text-white leading-[0.8] tracking-tighter mb-8 uppercase"
+                                    className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-serif text-white leading-[0.8] tracking-tighter mb-8 uppercase"
                                     dangerouslySetInnerHTML={{ __html: t("casos.header.title") }}
                                 />
                             </div>
@@ -133,7 +142,7 @@ export default function CasosClient() {
                                     className="space-y-6"
                                 >
                                     <span className="text-gold-muted text-xs font-bold tracking-[0.5em] uppercase">{t("casos.faceTransformation.badge")}</span>
-                                    <h2 className="text-white font-serif text-5xl md:text-7xl leading-tight italic uppercase" dangerouslySetInnerHTML={{ __html: t("casos.faceTransformation.title") }} />
+                                    <h2 className="text-white font-serif text-3xl sm:text-5xl md:text-7xl leading-tight italic uppercase" dangerouslySetInnerHTML={{ __html: t("casos.faceTransformation.title") }} />
                                     <p className="text-white/60 text-lg leading-relaxed font-light">
                                         {t("casos.faceTransformation.body")}
                                     </p>
@@ -153,8 +162,8 @@ export default function CasosClient() {
 
                             <div className="relative aspect-[4/3] max-w-xl mx-auto w-full rounded-[40px] overflow-hidden border border-white/10 shadow-2xl group">
                                 <ComparisonSlider
-                                    beforeImage="/images/results/case1-before.jpg"
-                                    afterImage="/images/results/case1-after.jpg"
+                                    beforeImage="/images/results/case1-before.webp"
+                                    afterImage="/images/results/case1-after.webp"
                                     className="h-full w-full"
                                 />
                                 <div className="absolute top-8 left-8 z-20 bg-black/40 backdrop-blur-md px-4 py-2 border border-white/10 rounded-full">
@@ -165,7 +174,7 @@ export default function CasosClient() {
                     </section>
 
                     {/* Video Case Spotlight (International Trust & Testimonial) */}
-                    <section className="mb-40 bg-white/[0.02] border border-white/5 rounded-[60px] p-8 md:p-16">
+                    <section className="mb-40 bg-white/[0.02] border border-white/5 rounded-3xl sm:rounded-[40px] md:rounded-[60px] p-5 sm:p-8 md:p-16">
                         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-16 items-center">
                             <div className="flex justify-center">
                                 <div className="relative aspect-[9/16] w-full max-w-[380px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
@@ -183,7 +192,7 @@ export default function CasosClient() {
                             <div className="space-y-8">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 flex items-center justify-center">
-                                        <Image src="/images/logo-diamond.png" alt="Diamond Dental" width={40} height={40} className="object-contain" />
+                                        <Image src="/images/logo-diamond.webp" alt="Diamond Dental" width={40} height={40} className="object-contain" />
                                     </div>
                                     <div>
                                         <h3 className="text-white font-serif text-3xl uppercase">{t("casos.testimonial.title")}</h3>
@@ -244,12 +253,12 @@ export default function CasosClient() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
-                                "/images/Actualizaciones/DientesMirandoLadoIzquierdo.jpeg",
-                                "/images/Actualizaciones/SonrisaFrontal.png",
-                                "/images/Casos-Comparativos/Caso5-6.jpeg",
-                                "/images/Actualizaciones/DientesMirandoLadoDerecho.jpeg",
-                                "/images/Casos-Comparativos/Caso9-10.jpeg",
-                                "/images/Casos-Comparativos/Caso11-12.jpeg"
+                                "/images/Actualizaciones/DientesMirandoLadoIzquierdo.webp",
+                                "/images/Actualizaciones/SonrisaFrontal.webp",
+                                "/images/Casos-Comparativos/Caso5-6.webp",
+                                "/images/Actualizaciones/DientesMirandoLadoDerecho.webp",
+                                "/images/Casos-Comparativos/Caso9-10.webp",
+                                "/images/Casos-Comparativos/Caso11-12.webp"
                             ].map((src, index) => (
                                 <m.div
                                     key={index}

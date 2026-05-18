@@ -11,33 +11,33 @@ import ComparisonSlider from '@/features/gallery/components/ComparisonSlider';
 const cases = [
     {
         id: 1,
-        before: "/images/results/case1-before.jpg",
-        after: "/images/results/case1-after.jpg",
+        before: "/images/results/case1-before.webp",
+        after: "/images/results/case1-after.webp",
     },
     {
         id: 2,
-        before: "/images/results/case2-before.jpg",
-        after: "/images/results/case2-after.jpg",
+        before: "/images/results/case2-before.webp",
+        after: "/images/results/case2-after.webp",
     },
     {
         id: 3,
-        before: "/images/results/case3-before.jpg",
-        after: "/images/results/case3-after.jpg",
+        before: "/images/results/case3-before.webp",
+        after: "/images/results/case3-after.webp",
     },
     {
         id: 4,
-        before: "/images/results/case4-before.jpg",
-        after: "/images/results/case4-after.jpg",
+        before: "/images/results/case4-before.webp",
+        after: "/images/results/case4-after.webp",
     },
     {
         id: 5,
-        before: "/images/results/case5-before.jpg",
-        after: "/images/results/case5-after.jpg",
+        before: "/images/results/case5-before.webp",
+        after: "/images/results/case5-after.webp",
     },
     {
         id: 6,
-        before: "/images/results/case6-before.png",
-        after: "/images/results/case6-after.png",
+        before: "/images/results/case6-before.webp",
+        after: "/images/results/case6-after.webp",
     }
 ];
 

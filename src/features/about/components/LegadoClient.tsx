@@ -15,7 +15,7 @@ export default function LegadoClient() {
                 <section className="relative w-full h-screen min-h-[700px] mb-32 overflow-hidden">
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/images/Casos/Laura-Julio1.JPEG"
+                            src="/images/Casos/Laura-Julio1.webp"
                             alt="Dr. Julio y Dra. Laura - Diamond Dental Founders"
                             fill
                             className="object-cover object-[center_15%] scale-105"
@@ -122,7 +122,7 @@ export default function LegadoClient() {
                                 className="relative aspect-[3/4] md:aspect-square rounded-[60px] overflow-hidden border border-white/10"
                             >
                                 <Image
-                                    src="/images/Casos/Laura-Julio.JPEG"
+                                    src="/images/Casos/Laura-Julio.webp"
                                     alt="Fundadores Diamond Dental - Empatía y Responsabilidad"
                                     fill
                                     className="object-cover object-[center_35%]"
@@ -197,7 +197,7 @@ export default function LegadoClient() {
                                     className="relative aspect-[3/4] md:aspect-[4/5] rounded-[40px] overflow-hidden border border-white/10"
                                 >
                                     <Image
-                                        src="/images/Casos/JulioOrtodonciaInvisible.JPEG"
+                                        src="/images/Casos/JulioOrtodonciaInvisible.webp"
                                         alt="Dr. Julio César Gámez - Ortodoncia Invisible"
                                         fill
                                         className="object-cover object-[center_20%]"
@@ -219,7 +219,7 @@ export default function LegadoClient() {
                                     className="relative aspect-[3/4] md:aspect-[4/5] rounded-[40px] overflow-hidden border border-white/10 sm:mt-16"
                                 >
                                     <Image
-                                        src="/images/Casos/Laura3.JPEG"
+                                        src="/images/Casos/Laura3.webp"
                                         alt="Dra. Laura Ospina - Odontología Estética"
                                         fill
                                         className="object-cover object-[center_20%]"

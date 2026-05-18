@@ -9,42 +9,42 @@ import { WhatsAppLinkGenerator } from "@/core/utils/WhatsAppLinkGenerator";
 const serviceList = [
     {
         id: "smileDesign",
-        image: "/images/Actualizaciones/DientesUnicaMirada.jpeg",
+        image: "/images/Actualizaciones/DientesUnicaMirada.webp",
         icon: Zap,
         accent: "from-white/10 to-white/5",
         imgPosition: "object-center"
     },
     {
         id: "orthodontics",
-        image: "/images/Casos/Julio2.JPEG",
+        image: "/images/Casos/Julio2.webp",
         icon: ShieldCheck,
         accent: "from-gold-muted/10 to-transparent",
         imgPosition: "object-center"
     },
     {
         id: "aesthetics",
-        image: "/images/Casos/Laura2.JPEG",
+        image: "/images/Casos/Laura2.webp",
         icon: CheckCircle2,
         accent: "from-white/10 to-white/5",
         imgPosition: "object-[center_15%]"
     },
     {
         id: "implants",
-        image: "/images/Casos/Dr_Jhon_Implantes.png",
+        image: "/images/Casos/Dr_Jhon_Implantes.webp",
         icon: ShieldCheck,
         accent: "from-white/10 to-white/5",
         imgPosition: "object-center"
     },
     {
         id: "endodontics",
-        image: "/images/team/SaraVaca.png",
+        image: "/images/team/SaraVaca.webp",
         icon: Activity,
         accent: "from-white/10 to-white/5",
         imgPosition: "object-[center_10%]"
     },
     {
         id: "scanner",
-        image: "/images/Casos/Scanner.png",
+        image: "/images/Casos/Scanner.webp",
         icon: Scan,
         accent: "from-white/10 to-white/5",
         imgPosition: "object-center"
@@ -60,7 +60,7 @@ export default function ServiciosClient() {
                 {/* Background Texture (Buddha) with Overlay */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/Buda.png"
+                        src="/images/Buda.webp"
                         alt="Diamond Dental Zen Atmosphere"
                         fill
                         className="object-cover opacity-10"
@@ -78,14 +78,14 @@ export default function ServiciosClient() {
                         <m.span
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="text-gold-muted tracking-[1em] text-[10px] font-bold uppercase mb-8 block"
+                            className="text-gold-muted tracking-[0.3em] sm:tracking-[0.6em] md:tracking-[1em] text-[10px] font-bold uppercase mb-8 block"
                         >
                             {t("subtitle")}
                         </m.span>
                         <m.h1
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            className="text-6xl md:text-9xl font-serif text-white tracking-tighter leading-none mb-12"
+                            className="text-4xl sm:text-6xl md:text-9xl font-serif text-white tracking-tighter leading-none mb-12"
                         >
                             {t("title")}
                         </m.h1>
@@ -112,7 +112,7 @@ export default function ServiciosClient() {
                                         className="relative group bg-white border border-white/10 rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] shadow-[0_40px_100px_rgba(0,0,0,0.15)] max-w-6xl mx-auto w-full mb-12"
                                     >
                                         {/* Lado A: Image pinned flush to edges on left */}
-                                        <div className="relative aspect-[4/3] lg:aspect-auto w-full h-full min-h-[450px] lg:min-h-[550px] overflow-hidden">
+                                        <div className="relative aspect-[4/3] lg:aspect-auto w-full h-full min-h-[280px] sm:min-h-[350px] lg:min-h-[550px] overflow-hidden">
                                             <Image
                                                 src={service.image}
                                                 alt={serviceTitle}

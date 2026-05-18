@@ -80,7 +80,7 @@ export default function LocationClient() {
                                 {/* Card Header Image */}
                                 <div className="h-48 relative w-full overflow-hidden">
                                     <Image
-                                        src="/images/Casos/Diseno_De_Sonrisa.png"
+                                        src="/images/Casos/Diseno_De_Sonrisa.webp"
                                         alt="Diamond Dental Clinic"
                                         fill
                                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -198,7 +198,7 @@ export default function LocationClient() {
                             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-white/20 group bg-[#111] p-3">
                                 <div className="relative w-full h-full rounded-xl overflow-hidden border border-white/10 bg-black">
                                     <Image
-                                        src="/images/Actualizaciones/MapaActualizado.png"
+                                        src="/images/Actualizaciones/MapaActualizado.webp"
                                         alt="Mapa de Ubicación Diamond Dental"
                                         fill
                                         sizes="(max-width: 768px) 100vw, 60vw"

@@ -1,5 +1,14 @@
 {
     "Index": {
+        "scroll3d": {
+            "title1": "Diamond",
+            "title2": "Dental",
+            "subtitle1": "Your smile in the hands of specialists",
+            "badge2": "Excellence that transcends",
+            "title3": "Excellence",
+            "title4": "has a name",
+            "indicator": "Scroll to explore"
+        },
         "essence": {
             "standards": {
                 "tech": "CAD/CAM SYSTEMS",
@@ -11,7 +20,8 @@
             "cta": "DISCOVER OUR STORY"
         },
         "introduction": {
-            "title": "EXCELLENCE\nHAS A NAME",
+            "badge": "Digital Planning",
+            "title": "Cutting-Edge Technology",
             "body": "Diamond Dental is born from the union of Dr. Julio César Gámez's clinical precision and Dr. Laura Ospina's aesthetic vision. More than a clinic, we are a sanctuary dedicated to dental perfection, where every treatment is a work of art sculpted with cutting-edge technology and unmatched artistic sensibility.",
             "cta": "DISCOVER THE SANCTUARY"
         },
@@ -106,6 +116,7 @@
             "title": "Our Specialists",
             "subtitle": "A team of experts committed to your oral excellence.",
             "groupSubtitle": "Excellence and Passion in Every Smile",
+            "bookingCta": "Book Assessment",
             "members": {
                 "laura": {
                     "name": "Dr. Laura Ospina",
@@ -267,6 +278,7 @@
             "resenas": "REVIEWS",
             "contact": "CONTACT",
             "team": "TEAM",
+            "legacy": "LEGACY",
             "booking": "Book assessment"
         },
         "contactPage": {
@@ -357,7 +369,11 @@
         "nosotros": {
             "hero": {
                 "title": "THE CONVERGENCE OF TWO LEGACIES",
-                "subtitle": "Excellence that transcends borders"
+                "subtitle": "Excellence that transcends borders",
+                "julioRole": "FOUNDER & ORTHODONTIST",
+                "julioTag": "Functional Architecture",
+                "lauraRole": "FOUNDER & AESTHETIC DENTIST",
+                "lauraTag": "Signature Aesthetics"
             },
             "story": {
                 "title": "Our Story",
@@ -625,9 +641,9 @@
                 "city": "Colombia",
                 "directionsTitle": "How to Get Here",
                 "directionsCar": "Private Vehicle",
-                "directionsCarDesc": "We have access to private parking inside the shopping center for your total comfort.",
+                "directionsCarDesc": "We have parking available in front of the shopping center for your convenience.",
                 "directionsPublic": "Public Transit",
-                "directionsPublicDesc": "Nearest metro station: Santa Lucía (10 min walk) or multiple bus routes along Avenida 80.",
+                "directionsPublicDesc": "Nearest metro station: Estadio (10 min walk) or multiple bus routes along Avenida 80.",
                 "scheduleTitle": "Office Hours",
                 "scheduleWeekdays": "Monday to Friday",
                 "scheduleWeekdaysHours": "9:30 AM - 7:00 PM",

@@ -11,31 +11,31 @@ import { WhatsAppLinkGenerator } from '@/core/utils/WhatsAppLinkGenerator';
 const teamMembers = [
     {
         id: 'julio',
-        image: '/images/team/Julio2.JPEG',
+        image: '/images/team/Julio2.webp',
         key: 'julio',
         instagram: 'https://www.instagram.com/ortodoncistajuliogamez/'
     },
     {
         id: 'laura',
-        image: '/images/team/Laura4.JPEG',
+        image: '/images/team/Laura4.webp',
         key: 'laura',
         instagram: 'https://www.instagram.com/dralauraospina_hernandez/'
     },
     {
         id: 'jhon',
-        image: '/images/team/Jhon.png',
+        image: '/images/team/Jhon.webp',
         key: 'jhon',
         instagram: 'https://www.instagram.com/odontologo_jhonestebangarcia/'
     },
     {
         id: 'sara',
-        image: '/images/Actualizaciones/SaraVaca.png',
+        image: '/images/Actualizaciones/SaraVaca.webp',
         key: 'sara',
         instagram: 'https://www.instagram.com/saravaca'
     },
     {
         id: 'camila',
-        image: '/images/team/Camila.PNG',
+        image: '/images/team/Camila.webp',
         key: 'camila'
     }
 ];
@@ -82,7 +82,7 @@ const MeetTheExperts = () => {
                         </div>
 
                         {/* TEXT SIDE */}
-                        <div className={`w-full h-[50vh] md:h-screen md:w-1/2 bg-[#0d0d0d] flex flex-col justify-center px-8 md:px-16 lg:px-24 xl:px-32 order-2 ${isPhotoRight ? 'md:order-1' : 'md:order-2'}`}>
+                        <div className={`w-full md:h-screen md:w-1/2 bg-[#0d0d0d] flex flex-col justify-center px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-10 md:py-0 order-2 ${isPhotoRight ? 'md:order-1' : 'md:order-2'}`}>
                             <motion.div
                                 initial={{ opacity: 0, y: 50, x: isPhotoRight ? -50 : 50 }}
                                 whileInView={{ opacity: 1, y: 0, x: 0 }}
@@ -148,7 +148,7 @@ const MeetTheExperts = () => {
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black font-bold uppercase tracking-[0.2em] text-xs hover:bg-gold-muted transition-colors duration-500 group"
                                     >
-                                        Reservar Valoración
+                                        {tTeam('bookingCta')}
                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </a>
                                 </div>
@@ -168,7 +168,7 @@ const MeetTheExperts = () => {
                     className="absolute inset-0"
                 >
                     <Image
-                        src="/images/Actualizaciones/LauraJulioCamila.jpeg"
+                        src="/images/Actualizaciones/LauraJulioCamila.webp"
                         alt="Diamond Dental Team Ensemble"
                         fill
                         className="object-cover object-top grayscale opacity-80"

@@ -2,10 +2,9 @@
 
 import { LazyMotion, domAnimation, m, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
-
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { ChevronDown } from "lucide-react";
 import { useBooking } from "@/shared/providers/BookingProvider";
 
 export default function HeroSection() {
@@ -13,9 +12,43 @@ export default function HeroSection() {
   const params = useParams();
   const locale = params?.locale as string || "es";
   const { openBooking } = useBooking();
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 500], [0, 1]);
+
+  // ── Carga diferida del video ────────────────────────────────────────────
+  // No bloqueamos el render inicial: esperamos a que el componente esté montado
+  // y la página esté visible para asignar el src y empezar a cargar el video.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const loadVideo = () => {
+      // Asignar src a TODOS los <source data-src="..."> para que el browser
+      // elija el formato más ligero que soporta (WebM > MP4)
+      const sources = video.querySelectorAll<HTMLSourceElement>('source[data-src]');
+      let loaded = false;
+      sources.forEach((source) => {
+        if (!source.src) {
+          source.src = source.dataset.src ?? '';
+          loaded = true;
+        }
+      });
+      if (loaded) {
+        video.load();
+        video.play().catch(() => {/* autoplay blocked por política del browser */});
+      }
+    };
+
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(loadVideo, { timeout: 2000 });
+    } else {
+      const timer = setTimeout(loadVideo, 300);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
 
   return (
     <LazyMotion features={domAnimation}>
@@ -23,13 +56,19 @@ export default function HeroSection() {
         {/* Background Video */}
         <div className="absolute inset-0 z-0">
           <video
+            ref={videoRef}
             autoPlay
             loop
             muted
             playsInline
+            poster="/images/hero-poster.webp"
+            preload="none"
             className="w-full h-full object-cover object-[60%_30%]"
           >
-            <source src="/Video/hero-video.m.mp4" type="video/mp4" />
+            {/* El browser elige el primer formato que soporta: WebM < MP4 en tamaño */}
+            {/* srcs vacíos intencionalmente: se asignan desde el useEffect tras el mount */}
+            <source data-src="/Video/hero-video.webm" type="video/webm" />
+            <source data-src="/Video/hero-video.mp4"  type="video/mp4"  />
           </video>
           {/* Dark Overlay Effects */}
           <div className="absolute inset-0 bg-black/50 z-10" />
@@ -67,7 +106,7 @@ export default function HeroSection() {
           >
             <button
               onClick={openBooking}
-              className="diamond-sparkle group relative px-8 md:px-10 py-5 bg-white text-black font-bold uppercase tracking-widest text-xs md:text-sm rounded-none overflow-hidden transition-all duration-500 hover:tracking-[0.2em] min-w-[200px]"
+              className="diamond-sparkle group relative px-8 md:px-10 py-5 bg-white text-black font-bold uppercase tracking-widest text-xs md:text-sm rounded-none overflow-hidden transition-all duration-500 hover:tracking-[0.2em] w-full sm:w-auto sm:min-w-[200px]"
             >
               <span className="relative z-10">{t("ctaMain") || "RESERVA YA"}</span>
               <div className="absolute inset-0 bg-diamond-ice/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
@@ -76,14 +115,14 @@ export default function HeroSection() {
 
             <Link
               href={`/${locale}/casos`}
-              className="px-8 md:px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-xs md:text-sm hover:border-diamond-ice/60 hover:bg-white/5 transition-all duration-500 backdrop-blur-md min-w-[200px] flex items-center justify-center"
+              className="px-8 md:px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-xs md:text-sm hover:border-diamond-ice/60 hover:bg-white/5 transition-all duration-500 backdrop-blur-md w-full sm:w-auto sm:min-w-[200px] flex items-center justify-center"
             >
               {t("ctaSecondary") || "NUESTROS CASOS"}
             </Link>
 
             <Link
               href={`/${locale}/servicios`}
-              className="px-8 md:px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-xs md:text-sm hover:border-diamond-ice/60 hover:bg-white/5 transition-all duration-500 backdrop-blur-md min-w-[200px] flex items-center justify-center"
+              className="px-8 md:px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-xs md:text-sm hover:border-diamond-ice/60 hover:bg-white/5 transition-all duration-500 backdrop-blur-md w-full sm:w-auto sm:min-w-[200px] flex items-center justify-center"
             >
               {t("ctaTertiary") || "SERVICIOS"}
             </Link>

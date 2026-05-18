@@ -15,20 +15,20 @@ const categories = [
 
 const galleryItems = [
     // Transformaciones Totales
-    { id: 101, category: "total", image: "/images/results/case1-after.jpg", before: "/images/results/case1-before.jpg", title: "Armonía Facial Completa", tech: "Rehabilitación Oral Bio-Estética" },
-    { id: 102, category: "total", image: "/images/results/case2-after.jpg", before: "/images/results/case2-before.jpg", title: "Equilibrio Muscular y Dental", tech: "Oclusión Funcional Avanzada" },
-    { id: 103, category: "total", image: "/images/results/case3-after.jpg", before: "/images/results/case3-before.jpg", title: "Transformación Estructural", tech: "Biocompatibilidad Cerámica" },
-    { id: 104, category: "total", image: "/images/results/case4-after.jpg", before: "/images/results/case4-before.jpg", title: "Proyección de Perfil", tech: "Arquitectura Gingival" },
-    { id: 105, category: "total", image: "/images/results/case5-after.jpg", before: "/images/results/case5-before.jpg", title: "Diseño de Autor", tech: "Micro-texturizado Cerámico" },
-    { id: 106, category: "total", image: "/images/results/case6-after.png", before: "/images/results/case6-before.png", title: "Rehabilitación Integral", tech: "Ingeniería Dental Avanzada" },
+    { id: 101, category: "total", image: "/images/results/case1-after.webp", before: "/images/results/case1-before.webp", title: "Armonía Facial Completa", tech: "Rehabilitación Oral Bio-Estética" },
+    { id: 102, category: "total", image: "/images/results/case2-after.webp", before: "/images/results/case2-before.webp", title: "Equilibrio Muscular y Dental", tech: "Oclusión Funcional Avanzada" },
+    { id: 103, category: "total", image: "/images/results/case3-after.webp", before: "/images/results/case3-before.webp", title: "Transformación Estructural", tech: "Biocompatibilidad Cerámica" },
+    { id: 104, category: "total", image: "/images/results/case4-after.webp", before: "/images/results/case4-before.webp", title: "Proyección de Perfil", tech: "Arquitectura Gingival" },
+    { id: 105, category: "total", image: "/images/results/case5-after.webp", before: "/images/results/case5-before.webp", title: "Diseño de Autor", tech: "Micro-texturizado Cerámico" },
+    { id: 106, category: "total", image: "/images/results/case6-after.webp", before: "/images/results/case6-before.webp", title: "Rehabilitación Integral", tech: "Ingeniería Dental Avanzada" },
 
     // Diseños Naturales
-    { id: 1, category: "natural", image: "/images/Carrusel/Sonrisa-good1.PNG", before: "/images/Carrusel/Sonrisa-bad1.PNG", tech: "Mimetismo Natural" },
-    { id: 2, category: "natural", image: "/images/Carrusel/Sonrisa-good2.PNG", before: "/images/Carrusel/Sonrisa-bad2.PNG", tech: "Lentes de Contacto Dental" },
-    { id: 3, category: "natural", image: "/images/Carrusel/Sonrisa-good3.jpeg", before: "/images/Carrusel/Sonrisa-bad3.jpeg", tech: "Estética Mínimamente Invasiva" },
-    { id: 4, category: "natural", image: "/images/Carrusel/Sonrisa-good4.jpeg", before: "/images/Carrusel/Sonrisa-bada4.jpeg", tech: "Reconstrucción Estética" },
-    { id: 5, category: "natural", image: "/images/Carrusel/Sonrisa-good5.jpeg", before: "/images/Carrusel/Sonrisa-bad5.jpeg", tech: "Cambio de Dimensión Vertical" },
-    { id: 6, category: "natural", image: "/images/Carrusel/Sonrisa-good6.png", before: "/images/Carrusel/Sonrisa-bad6.png", tech: "Armonía Estética Superior" }
+    { id: 1, category: "natural", image: "/images/Carrusel/Sonrisa-good1.webp", before: "/images/Carrusel/Sonrisa-bad1.webp", tech: "Mimetismo Natural" },
+    { id: 2, category: "natural", image: "/images/Carrusel/Sonrisa-good2.webp", before: "/images/Carrusel/Sonrisa-bad2.webp", tech: "Lentes de Contacto Dental" },
+    { id: 3, category: "natural", image: "/images/Carrusel/Sonrisa-good3.webp", before: "/images/Carrusel/Sonrisa-bad3.webp", tech: "Estética Mínimamente Invasiva" },
+    { id: 4, category: "natural", image: "/images/Carrusel/Sonrisa-good4.webp", before: "/images/Carrusel/Sonrisa-bada4.webp", tech: "Reconstrucción Estética" },
+    { id: 5, category: "natural", image: "/images/Carrusel/Sonrisa-good5.webp", before: "/images/Carrusel/Sonrisa-bad5.webp", tech: "Cambio de Dimensión Vertical" },
+    { id: 6, category: "natural", image: "/images/Carrusel/Sonrisa-good6.webp", before: "/images/Carrusel/Sonrisa-bad6.webp", tech: "Armonía Estética Superior" }
 ];
 
 export default function MuseumGallery() {

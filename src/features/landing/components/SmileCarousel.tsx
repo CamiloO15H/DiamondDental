@@ -5,16 +5,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const images = [
-    "/images/Carrusel/Sonrisa-bad1.PNG",
-    "/images/Carrusel/Sonrisa-bad2.PNG",
-    "/images/Carrusel/Sonrisa-bad3.jpeg",
-    "/images/Carrusel/Sonrisa-bad5.jpeg",
-    "/images/Carrusel/Sonrisa-bada4.jpeg",
-    "/images/Carrusel/Sonrisa-good1.PNG",
-    "/images/Carrusel/Sonrisa-good2.PNG",
-    "/images/Carrusel/Sonrisa-good3.jpeg",
-    "/images/Carrusel/Sonrisa-good4.jpeg",
-    "/images/Carrusel/Sonrisa-good5.jpeg",
+    "/images/Carrusel/Sonrisa-bad1.webp",
+    "/images/Carrusel/Sonrisa-bad2.webp",
+    "/images/Carrusel/Sonrisa-bad3.webp",
+    "/images/Carrusel/Sonrisa-bad5.webp",
+    "/images/Carrusel/Sonrisa-bada4.webp",
+    "/images/Carrusel/Sonrisa-good1.webp",
+    "/images/Carrusel/Sonrisa-good2.webp",
+    "/images/Carrusel/Sonrisa-good3.webp",
+    "/images/Carrusel/Sonrisa-good4.webp",
+    "/images/Carrusel/Sonrisa-good5.webp",
 ];
 
 export default function SmileCarousel() {

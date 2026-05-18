@@ -18,7 +18,7 @@ export default function NosotrosClient() {
                 <section className="relative w-full h-screen min-h-[700px] mb-32 overflow-hidden">
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/images/Casos/Laura-Julio1.JPEG"
+                            src="/images/Casos/Laura-Julio1.webp"
                             alt="Dr. Julio y Dra. Laura - Diamond Dental Founders"
                             fill
                             className="object-cover object-[center_15%] scale-105"
@@ -45,7 +45,7 @@ export default function NosotrosClient() {
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.1, duration: 1 }}
-                                className="text-6xl md:text-8xl lg:text-[100px] font-serif italic mb-12 leading-[0.9] tracking-tighter"
+                                className="text-4xl sm:text-6xl md:text-8xl lg:text-[100px] font-serif italic mb-12 leading-[0.9] tracking-tighter"
                             >
                                 {t("hero.title")}
                             </m.h1>
@@ -64,12 +64,12 @@ export default function NosotrosClient() {
                                         </div>
                                         <div>
                                             <h3 className="text-xl font-serif text-white uppercase tracking-wider">Dr. Julio César Gámez</h3>
-                                            <p className="text-[10px] text-white/50 tracking-[0.2em] uppercase">FUNDADOR & ORTODONCISTA</p>
+                                            <p className="text-[10px] text-white/50 tracking-[0.2em] uppercase">{t('hero.julioRole')}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-2 px-4 py-2 bg-gold-muted/10 border border-gold-muted/20 rounded-full w-fit">
                                         <Sparkles className="w-3 h-3 text-gold-muted" />
-                                        <span className="text-[9px] font-bold tracking-widest uppercase text-gold-muted">Arquitectura Funcional</span>
+                                        <span className="text-[9px] font-bold tracking-widest uppercase text-gold-muted">{t('hero.julioTag')}</span>
                                     </div>
                                 </m.div>
 
@@ -86,12 +86,12 @@ export default function NosotrosClient() {
                                         </div>
                                         <div>
                                             <h3 className="text-xl font-serif text-white uppercase tracking-wider">Dra. Laura Ospina</h3>
-                                            <p className="text-[10px] text-white/50 tracking-[0.2em] uppercase">FUNDADORA & ODONTÓLOGA ESTÉTICA</p>
+                                            <p className="text-[10px] text-white/50 tracking-[0.2em] uppercase">{t('hero.lauraRole')}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full w-fit">
                                         <Sparkles className="w-3 h-3 text-white/60" />
-                                        <span className="text-[9px] font-bold tracking-widest uppercase text-white/80">Estética de Autor</span>
+                                        <span className="text-[9px] font-bold tracking-widest uppercase text-white/80">{t('hero.lauraTag')}</span>
                                     </div>
                                 </m.div>
                             </div>
@@ -125,7 +125,7 @@ export default function NosotrosClient() {
                                 className="relative aspect-[3/4] md:aspect-square rounded-[60px] overflow-hidden border border-white/10"
                             >
                                 <Image
-                                    src="/images/Casos/Laura-Julio.JPEG"
+                                    src="/images/Casos/Laura-Julio.webp"
                                     alt="Fundadores Diamond Dental - Empatía y Responsabilidad"
                                     fill
                                     className="object-cover object-[center_35%]"
@@ -200,7 +200,7 @@ export default function NosotrosClient() {
                                     className="relative aspect-[3/4] md:aspect-[4/5] rounded-[40px] overflow-hidden border border-white/10"
                                 >
                                     <Image
-                                        src="/images/Casos/JulioOrtodonciaInvisible.JPEG"
+                                        src="/images/Casos/JulioOrtodonciaInvisible.webp"
                                         alt="Dr. Julio César Gámez - Ortodoncia Invisible"
                                         fill
                                         className="object-cover object-[center_20%]"
@@ -222,7 +222,7 @@ export default function NosotrosClient() {
                                     className="relative aspect-[3/4] md:aspect-[4/5] rounded-[40px] overflow-hidden border border-white/10 sm:mt-16"
                                 >
                                     <Image
-                                        src="/images/Casos/Laura3.JPEG"
+                                        src="/images/Casos/Laura3.webp"
                                         alt="Dra. Laura Ospina - Odontología Estética"
                                         fill
                                         className="object-cover object-[center_20%]"

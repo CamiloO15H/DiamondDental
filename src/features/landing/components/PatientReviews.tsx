@@ -44,7 +44,7 @@ export default function PatientReviews() {
             <div className="absolute inset-0 z-0 h-full w-full flex items-center justify-center">
                 <div className="absolute w-full h-full opacity-80">
                     <Image
-                        src="/images/Buda.png"
+                        src="/images/Buda.webp"
                         alt="Diamond Dental Zen Atmosphere"
                         fill
                         sizes="100vw"

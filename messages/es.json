@@ -1,5 +1,14 @@
 {
     "Index": {
+        "scroll3d": {
+            "title1": "Diamond",
+            "title2": "Dental",
+            "subtitle1": "Tu sonrisa en manos de especialistas",
+            "badge2": "Excelencia que trasciende",
+            "title3": "La excelencia",
+            "title4": "tiene nombre",
+            "indicator": "Desliza para explorar"
+        },
         "essence": {
             "standards": {
                 "tech": "SISTEMAS CAD/CAM",
@@ -11,7 +20,8 @@
             "cta": "CONOCE NUESTRA HISTORIA"
         },
         "introduction": {
-            "title": "LA EXCELENCIA\nTIENE NOMBRE",
+            "badge": "Planificación Digital",
+            "title": "Tecnología a la Vanguardia",
             "body": "Diamond Dental nace de la unión de la precisión clínica del Dr. Julio César Gámez y la visión estética de la Dra. Laura Ospina. Más que una clínica, somos un santuario dedicado a la perfección dental, donde cada tratamiento es una obra de arte esculpida con tecnología de vanguardia y una sensibilidad artística inigualable.",
             "cta": "DESCUBRIR EL SANTUARIO"
         },
@@ -106,6 +116,7 @@
             "title": "Nuestros Especialistas",
             "subtitle": "Un equipo de expertos comprometidos con tu excelencia oral.",
             "groupSubtitle": "Excelencia y Pasión en cada Sonrisa",
+            "bookingCta": "Reservar Valoración",
             "members": {
                 "laura": {
                     "name": "Dra. Laura Ospina",
@@ -267,6 +278,7 @@
             "resenas": "RESEÑAS",
             "contact": "CONTACTO",
             "team": "EQUIPO",
+            "legacy": "LEGADO",
             "booking": "Reservar valoración"
         },
         "contactPage": {
@@ -357,7 +369,11 @@
         "nosotros": {
             "hero": {
                 "title": "LA CONVERGENCIA DE DOS LEGADOS",
-                "subtitle": "Excelencia que trasciende fronteras"
+                "subtitle": "Excelencia que trasciende fronteras",
+                "julioRole": "FUNDADOR & ORTODONCISTA",
+                "julioTag": "Arquitectura Funcional",
+                "lauraRole": "FUNDADORA & ODONTÓLOGA ESTÉTICA",
+                "lauraTag": "Estética de Autor"
             },
             "story": {
                 "title": "Nuestra Historia",
@@ -625,9 +641,9 @@
                 "city": "Colombia",
                 "directionsTitle": "Cómo Llegar",
                 "directionsCar": "Vehículo Particular",
-                "directionsCarDesc": "Contamos con acceso a parqueadero privado dentro del centro comercial para su total comodidad.",
+                "directionsCarDesc": "Contamos con acceso a parqueadero frente al centro comercial para su total comodidad.",
                 "directionsPublic": "Transporte Público",
-                "directionsPublicDesc": "Estación de metro más cercana: Santa Lucía (10 min caminando) o múltiples rutas de buses por la Avenida 80.",
+                "directionsPublicDesc": "Estación de metro más cercana: Estadio (10 min caminando) o múltiples rutas de buses por la Avenida 80.",
                 "scheduleTitle": "Horarios de Atención",
                 "scheduleWeekdays": "Lunes a Viernes",
                 "scheduleWeekdaysHours": "9:30 AM - 7:00 PM",

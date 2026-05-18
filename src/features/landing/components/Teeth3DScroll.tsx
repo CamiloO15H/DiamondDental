@@ -57,8 +57,8 @@ export default function Teeth3DScroll() {
                         transition={{ duration: 1.2, delay: 0.2, ease: 'easeOut' }}
                         className="text-5xl md:text-8xl lg:text-9xl xl:text-[110px] font-serif text-white mb-6 leading-[0.95] tracking-tight uppercase"
                     >
-                        Diamond<br />
-                        <span className="italic text-gold-muted/90">Dental</span>
+                        {t('scroll3d.title1')}<br />
+                        <span className="italic text-gold-muted/90">{t('scroll3d.title2')}</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ export default function Teeth3DScroll() {
                         transition={{ duration: 1.2, delay: 0.4, ease: 'easeOut' }}
                         className="text-xs md:text-lg font-sans font-light text-white/80 max-w-2xl mx-auto tracking-wide leading-relaxed uppercase"
                     >
-                        Tu sonrisa en manos de especialistas
+                        {t('scroll3d.subtitle1')}
                     </motion.p>
                 </motion.div>
 
@@ -76,11 +76,11 @@ export default function Teeth3DScroll() {
                     className="absolute z-30 text-center px-6 max-w-7xl flex flex-col items-center justify-center pointer-events-none"
                 >
                     <span className="text-[10px] md:text-sm text-gold-muted/60 tracking-[0.8em] uppercase font-bold block mb-4">
-                        Excelencia que trasciende
+                        {t('scroll3d.badge2')}
                     </span>
                     <h2 className="text-4xl md:text-7xl lg:text-8xl xl:text-[95px] font-serif text-white leading-[0.95] tracking-tight uppercase whitespace-pre-line">
-                        La excelencia<br />
-                        <span className="italic text-gold-muted/90">tiene nombre</span>
+                        {t('scroll3d.title3')}<br />
+                        <span className="italic text-gold-muted/90">{t('scroll3d.title4')}</span>
                     </h2>
                 </motion.div>
 
@@ -89,7 +89,7 @@ export default function Teeth3DScroll() {
                     style={{ opacity: text1Opacity }}
                     className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-30 pointer-events-none"
                 >
-                    <span className="text-[9px] uppercase tracking-[0.4em] text-white/40">Desliza para explorar</span>
+                    <span className="text-[9px] uppercase tracking-[0.4em] text-white/40">{t('scroll3d.indicator')}</span>
                     <div className="w-[1px] h-10 bg-gradient-to-b from-white/40 to-transparent" />
                 </motion.div>
             </div>

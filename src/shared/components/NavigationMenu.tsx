@@ -83,7 +83,7 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
                             {/* Sidebar Header with Logo and Close button */}
                             <div className="flex items-center justify-between mb-16">
                                 <Image
-                                    src="/images/logo-diamond.png"
+                                    src="/images/logo-diamond.webp"
                                     alt="Diamond Logo"
                                     width={48}
                                     height={48}
@@ -91,6 +91,8 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
                                 />
                                 <button
                                     onClick={onClose}
+                                    title="Close menu"
+                                    aria-label="Close menu"
                                     className="group p-4 -mr-4 text-white/50 hover:text-white transition-colors"
                                 >
                                     <X className="w-8 h-8 group-hover:rotate-180 transition-transform duration-500" />
@@ -127,14 +129,14 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
                                                                 onClick={onClose}
                                                                 className="text-lg md:text-xl font-serif uppercase tracking-tight text-white/60 hover:text-white transition-all duration-300 hover:pl-2"
                                                             >
-                                                                Legado
+                                                                {t("legacy")}
                                                             </Link>
                                                             <Link
                                                                 href={`/${locale}/team`}
                                                                 onClick={onClose}
                                                                 className="text-lg md:text-xl font-serif uppercase tracking-tight text-white/60 hover:text-white transition-all duration-300 hover:pl-2"
                                                             >
-                                                                Nuestro Team
+                                                                {t("team")}
                                                             </Link>
                                                         </m.div>
                                                     )}

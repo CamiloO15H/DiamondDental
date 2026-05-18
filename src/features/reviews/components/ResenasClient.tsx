@@ -38,7 +38,7 @@ export default function ResenasClient() {
                 {/* Background Buda Image */}
                 <div className="absolute inset-0 z-0 h-full w-full pointer-events-none">
                     <Image
-                        src="/images/Buda.png"
+                        src="/images/Buda.webp"
                         alt="Buda background Atmosphere"
                         fill
                         className="object-cover object-center"
@@ -173,7 +173,7 @@ export default function ResenasClient() {
                             href={WhatsAppLinkGenerator.generateGenericLink()}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center gap-4 bg-white text-black font-black uppercase tracking-[0.3em] text-sm md:text-base px-10 py-6 hover:bg-gold-muted hover:text-white transition-all duration-500"
+                            className="inline-flex items-center justify-center gap-3 bg-white text-black font-black uppercase tracking-[0.15em] sm:tracking-[0.3em] text-xs sm:text-sm md:text-base px-6 sm:px-10 py-5 sm:py-6 hover:bg-gold-muted hover:text-white transition-all duration-500"
                         >
                             {t('ctaButton')} <ArrowRight className="w-5 h-5" />
                         </a>

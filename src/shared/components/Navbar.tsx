@@ -79,7 +79,7 @@ export default function Navbar() {
                 className="relative"
               >
                 <Image
-                  src="/images/logo-diamond.png"
+                  src="/images/logo-diamond.webp"
                   alt="Diamond Isotype"
                   width={54}
                   height={54}
