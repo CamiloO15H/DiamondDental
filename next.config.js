@@ -38,6 +38,15 @@ const nextConfig = {
                 ],
             },
             {
+                source: '/frames/:path*',
+                headers: [
+                    {
+                        key: 'Cache-Control',
+                        value: 'public, max-age=31536000, immutable',
+                    },
+                ],
+            },
+            {
                 source: '/Video/:path*',
                 headers: [
                     {

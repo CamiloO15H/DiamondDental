@@ -23,7 +23,36 @@
             "badge": "Planificación Digital",
             "title": "Tecnología a la Vanguardia",
             "body": "Diamond Dental nace de la unión de la precisión clínica del Dr. Julio César Gámez y la visión estética de la Dra. Laura Ospina. Más que una clínica, somos un santuario dedicado a la perfección dental, donde cada tratamiento es una obra de arte esculpida con tecnología de vanguardia y una sensibilidad artística inigualable.",
-            "cta": "DESCUBRIR EL SANTUARIO"
+            "cta": "CONOCE NUESTRA HISTORIA"
+        },
+        "hub": {
+            "sectionBadge": "Navega módulos de nuestra clínica",
+            "cards": {
+                "legacy": {
+                    "badge": "PASIÓN & PRECISIÓN",
+                    "title": "Nuestro Legado",
+                    "description": "La convergencia de dos trayectorias médicas internacionales unidas por el amor, el arte y la perfección clínica.",
+                    "cta": "Explorar Legado"
+                },
+                "services": {
+                    "badge": "INGENIERÍA DENTAL",
+                    "title": "Servicios de Autor",
+                    "description": "Diseño de sonrisa 3D, rehabilitación oral y estética avanzada bajo estándares de lujo absoluto.",
+                    "cta": "Ver Servicios"
+                },
+                "cases": {
+                    "badge": "RESULTADOS CLÍNICOS",
+                    "title": "Casos de Éxito",
+                    "description": "Descubre transformaciones faciales y dentales reales respaldadas por precisión milimétrica.",
+                    "cta": "Ver Casos"
+                },
+                "team": {
+                    "badge": "ESPECIALISTAS DE ÉLITE",
+                    "title": "Nuestro Equipo",
+                    "description": "Conoce a los doctores Julio César Gámez, Laura Ospina y los expertos dedicados a tu salud y armonía.",
+                    "cta": "Conocer Especialistas"
+                }
+            }
         },
         "title": "Diamond Dental | Clínica Odontológica de Lujo",
         "whyChooseUs": {
@@ -231,7 +260,7 @@
             "philosophy": "Excelencia en cada sonrisa.",
             "contact": {
                 "title": "Contacto",
-                "address": "Cl. 51 # 73 -73, Laureles - Estadio, Medellín (Al Frente del C.C. El Diamante)",
+                "address": "Cl. 51 # 73 -73, Laureles - Estadio, Medellín (Diagonal del C.C. El Diamante)",
                 "phone": "+57 314 8311777",
                 "email": "diamondental.clinica@gmail.com"
             },
@@ -422,14 +451,46 @@
                 "video3Title": "Diseño y Cambio Extremo",
                 "video3Author": "Lentes Cerámicos"
             },
+            "orthoDetails": {
+                "title": "Alternativas de Tratamiento",
+                "ctaOpen": "Ver alternativas de tratamiento",
+                "ctaClose": "Ocultar alternativas de tratamiento",
+                "list": {
+                    "conventional": {
+                        "title": "Brackets metálicos",
+                        "badge": "CONVENCIONALES",
+                        "description": "Los brackets de acero inoxidable clásicos, ideales para una corrección precisa, eficiente y tradicional."
+                    },
+                    "aesthetic": {
+                        "title": "Brackets estéticos",
+                        "badge": "CERÁMICA / ZAFIRO",
+                        "description": "Confeccionados en cerámica translúcida o zafiro monocristalino puro, que se mimetizan con el color natural del esmalte dental ofreciendo máxima discreción."
+                    },
+                    "mini": {
+                        "title": "Brackets metálicos Mini",
+                        "badge": "TAMAÑO REDUCIDO",
+                        "description": "Misma precisión tridimensional de los brackets convencionales pero con un perfil reducido que incrementa sustancialmente el confort labial y la higiene."
+                    },
+                    "selfLigating": {
+                        "title": "Brackets Autoligables",
+                        "badge": "MÁS RÁPIDO",
+                        "description": "Disponibles en cerámica o metal. Al no requerir ligaduras elásticas, reducen la fricción acelerando los movimientos dentales y acortando la duración global del tratamiento."
+                    },
+                    "invisible": {
+                        "title": "Ortodoncia Invisible",
+                        "badge": "SIN BRACKETS",
+                        "description": "Tratamiento estético premium que prescinde por completo de alambres y brackets, empleando alineadores transparentes ultrafinos y totalmente removibles."
+                    }
+                }
+            },
             "list": {
                 "smileDesign": {
                     "title": "Diseño de Sonrisa",
                     "description": "Esculpimos obras de arte personalizadas que reflejan tu esencia. Con tecnología digital CAD/CAM y lentes cerámicos ultrafinos, logramos una simetría y luminosidad perfectas."
                 },
                 "orthodontics": {
-                    "title": "Ortodoncia Invisible",
-                    "description": "La evolución de la ortodoncia. Alineadores transparentes diseñados digitalmente para corregir tu sonrisa con absoluta discreción, confort y precisión micrométrica."
+                    "title": "Ortodoncia",
+                    "description": "La evolución de la ortodoncia. Ortodoncia invisible diseñada digitalmente para corregir tu sonrisa con absoluta discreción, confort y precisión micrométrica."
                 },
                 "aesthetics": {
                     "title": "Odontología Estética",

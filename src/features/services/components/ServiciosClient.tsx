@@ -1,9 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Play, CheckCircle2, ShieldCheck, Zap, Activity, Scan, MessageCircle } from "lucide-react";
+import { Play, CheckCircle2, ShieldCheck, Zap, Activity, Scan, MessageCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { WhatsAppLinkGenerator } from "@/core/utils/WhatsAppLinkGenerator";
 
 const serviceList = [
@@ -53,6 +54,8 @@ const serviceList = [
 
 export default function ServiciosClient() {
     const t = useTranslations("Index.servicios");
+    const [isOrthoPanelOpen, setIsOrthoPanelOpen] = useState(false);
+    const [activeOrthoTreatment, setActiveOrthoTreatment] = useState<string | null>(null);
 
     return (
         <LazyMotion features={domAnimation}>
@@ -147,6 +150,133 @@ export default function ServiciosClient() {
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-black/10 bg-black text-white text-sm font-sans font-bold hover:bg-gold-dark transition-all duration-300 transform hover:scale-105"
+                                                >
+                                                    <MessageCircle className="w-4 h-4" />
+                                                    {t("cta")}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </m.section>
+                                );
+                            }
+
+                            if (service.id === "orthodontics") {
+                                const orthoTreatmentsKeys = ["conventional", "aesthetic", "mini", "selfLigating", "invisible"];
+                                return (
+                                    <m.section
+                                        key={service.id}
+                                        initial={{ opacity: 0, y: 40 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true, margin: "-100px" }}
+                                        transition={{ duration: 0.8, delay: 0.1 }}
+                                        className={`relative group flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12 lg:gap-20`}
+                                    >
+                                        {/* Background Blob (Light reflection) */}
+                                        <div className={`absolute top-1/2 -translate-y-1/2 ${isEven ? 'left-1/4' : 'right-1/4'} w-96 h-96 bg-white/5 rounded-full blur-[100px] pointer-events-none transition-all duration-1000 group-hover:bg-gold-light/10`}></div>
+
+                                        {/* Lado A: Imagen */}
+                                        <div className="w-full lg:w-1/2 relative">
+                                            <div className="relative w-full aspect-[4/3] lg:aspect-square lg:max-h-[600px] rounded-[40px] overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(255,255,255,0.03)] group-hover:shadow-[0_0_60px_rgba(255,255,255,0.08)] transition-all duration-700">
+                                                <Image
+                                                    src={service.image}
+                                                    alt={serviceTitle}
+                                                    fill
+                                                    sizes="(max-width: 1024px) 100vw, 50vw"
+                                                    className={`object-cover group-hover:scale-105 transition-all duration-1000 ${service.imgPosition}`}
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-[#1f1f1f]/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-1000"></div>
+                                            </div>
+                                        </div>
+
+                                        {/* Lado B: Texto y Contenido */}
+                                        <div className="w-full lg:w-1/2 flex flex-col justify-center relative z-10">
+                                            <service.icon className="w-10 h-10 text-gold-muted mb-8 group-hover:scale-110 transition-transform duration-500" />
+
+                                            <h2 className="text-4xl md:text-6xl font-serif text-white mb-6 group-hover:text-gold-light transition-colors duration-500">
+                                                <span className={isEven ? '' : 'italic font-light'}>
+                                                    {serviceTitle.split(' ')[0]}
+                                                </span>
+                                                {" "}
+                                                <span className={isEven ? 'italic font-light' : ''}>
+                                                    {serviceTitle.split(' ').slice(1).join(' ')}
+                                                </span>
+                                            </h2>
+
+                                            <p className="text-white/60 text-lg md:text-xl font-light leading-relaxed mb-8">
+                                                {t(`list.${service.id}.description`)}
+                                            </p>
+
+                                            {/* Sliding Collapsible Treatment List */}
+                                            <div className="mb-10 border border-white/10 rounded-2xl bg-white/[0.02] backdrop-blur-sm overflow-hidden transition-all duration-500 w-full">
+                                                <button
+                                                    onClick={() => setIsOrthoPanelOpen(!isOrthoPanelOpen)}
+                                                    className="w-full flex items-center justify-between px-6 py-5 text-left text-white hover:bg-white/[0.04] transition-all duration-300 group/btn"
+                                                >
+                                                    <span className="font-serif text-lg text-gold-muted group-hover/btn:text-white transition-colors duration-300">
+                                                        {t("orthoDetails.title")}
+                                                    </span>
+                                                    <div className="flex items-center gap-2 text-white/40 group-hover/btn:text-white transition-colors duration-300">
+                                                        <span className="font-sans text-[10px] tracking-widest uppercase">
+                                                            {isOrthoPanelOpen ? t("orthoDetails.ctaClose") : t("orthoDetails.ctaOpen")}
+                                                        </span>
+                                                        {isOrthoPanelOpen ? <ChevronUp className="w-4 h-4 text-gold-muted animate-pulse" /> : <ChevronDown className="w-4 h-4 text-gold-muted animate-pulse" />}
+                                                    </div>
+                                                </button>
+
+                                                {/* Collapsible Panel */}
+                                                <m.div
+                                                    initial={false}
+                                                    animate={{ height: isOrthoPanelOpen ? "auto" : 0 }}
+                                                    transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                                                    className="overflow-hidden"
+                                                >
+                                                    <div className="px-6 pb-6 pt-2 flex flex-col gap-3 border-t border-white/5">
+                                                        {orthoTreatmentsKeys.map((key) => {
+                                                            const isExpanded = activeOrthoTreatment === key;
+                                                            return (
+                                                                <div
+                                                                    key={key}
+                                                                    className="border border-white/5 rounded-xl bg-white/[0.01] hover:bg-white/[0.02] overflow-hidden transition-all duration-300"
+                                                                >
+                                                                    <button
+                                                                        onClick={() => setActiveOrthoTreatment(isExpanded ? null : key)}
+                                                                        className="w-full flex items-center justify-between px-5 py-4 text-left hover:text-gold-light transition-colors duration-300"
+                                                                    >
+                                                                        <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                                                                            <span className="font-sans font-semibold text-white text-sm sm:text-base">
+                                                                                {t(`orthoDetails.list.${key}.title`)}
+                                                                            </span>
+                                                                            <span className="inline-block self-start sm:self-center font-sans text-[9px] tracking-widest font-bold uppercase text-gold-muted px-2 py-0.5 rounded-full border border-gold-muted/30 bg-gold-muted/5">
+                                                                                {t(`orthoDetails.list.${key}.badge`)}
+                                                                            </span>
+                                                                        </div>
+                                                                        {isExpanded ? <ChevronUp className="w-4 h-4 text-gold-muted" /> : <ChevronDown className="w-4 h-4 text-gold-muted" />}
+                                                                    </button>
+
+                                                                    <m.div
+                                                                        initial={false}
+                                                                        animate={{ height: isExpanded ? "auto" : 0 }}
+                                                                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                                        className="overflow-hidden"
+                                                                    >
+                                                                        <div className="px-5 pb-4 pt-1 text-sm text-white/50 leading-relaxed font-light border-t border-white/[0.03] bg-black/10">
+                                                                            {t(`orthoDetails.list.${key}.description`)}
+                                                                        </div>
+                                                                    </m.div>
+                                                                </div>
+                                                            );
+                                                        })}
+                                                    </div>
+                                                </m.div>
+                                            </div>
+
+                                            {/* Action Button */}
+                                            <div className="flex items-center gap-6">
+                                                <a
+                                                    href={waLink}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-white/20 bg-white/5 text-white/90 text-sm font-sans font-bold hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105"
                                                 >
                                                     <MessageCircle className="w-4 h-4" />
                                                     {t("cta")}

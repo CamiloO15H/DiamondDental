@@ -23,7 +23,36 @@
             "badge": "Digital Planning",
             "title": "Cutting-Edge Technology",
             "body": "Diamond Dental is born from the union of Dr. Julio César Gámez's clinical precision and Dr. Laura Ospina's aesthetic vision. More than a clinic, we are a sanctuary dedicated to dental perfection, where every treatment is a work of art sculpted with cutting-edge technology and unmatched artistic sensibility.",
-            "cta": "DISCOVER THE SANCTUARY"
+            "cta": "DISCOVER OUR STORY"
+        },
+        "hub": {
+            "sectionBadge": "Navigate the modules of our clinic",
+            "cards": {
+                "legacy": {
+                    "badge": "PASSION & PRECISION",
+                    "title": "Our Legacy",
+                    "description": "The convergence of two international medical careers united by love, artistry, and clinical perfection.",
+                    "cta": "Explore Legacy"
+                },
+                "services": {
+                    "badge": "DENTAL ENGINEERING",
+                    "title": "Exclusive Services",
+                    "description": "3D smile design, oral rehabilitation, and advanced aesthetics under standards of absolute luxury.",
+                    "cta": "View Services"
+                },
+                "cases": {
+                    "badge": "CLINICAL RESULTS",
+                    "title": "Success Cases",
+                    "description": "Discover real facial and dental transformations backed by millimeter precision.",
+                    "cta": "View Cases"
+                },
+                "team": {
+                    "badge": "ELITE SPECIALISTS",
+                    "title": "Our Team",
+                    "description": "Meet doctors Julio César Gámez, Laura Ospina, and the experts dedicated to your health and harmony.",
+                    "cta": "Meet Specialists"
+                }
+            }
         },
         "title": "Diamond Dental | Luxury Dental Clinic",
         "whyChooseUs": {
@@ -231,7 +260,7 @@
             "philosophy": "Excellence in every smile.",
             "contact": {
                 "title": "Contact",
-                "address": "Cl. 51 # 73 -73, Laureles - Estadio, Medellín (In front of C.C. El Diamante)",
+                "address": "Cl. 51 # 73 -73, Laureles - Estadio, Medellín (Diagonal of C.C. El Diamante)",
                 "phone": "+57 314 8311777",
                 "email": "diamondental.clinica@gmail.com"
             },
@@ -422,14 +451,46 @@
                 "video3Title": "Design and Extreme Makeover",
                 "video3Author": "Ceramic Lenses"
             },
+            "orthoDetails": {
+                "title": "Treatment Alternatives",
+                "ctaOpen": "View treatment alternatives",
+                "ctaClose": "Hide treatment alternatives",
+                "list": {
+                    "conventional": {
+                        "title": "Metal Brackets",
+                        "badge": "CONVENTIONAL",
+                        "description": "Classic stainless steel brackets, ideal for precise, efficient, and traditional correction."
+                    },
+                    "aesthetic": {
+                        "title": "Aesthetic Brackets",
+                        "badge": "CERAMIC / SAPPHIRE",
+                        "description": "Made of translucent ceramic or pure monocrystalline sapphire, blending with the natural tooth enamel color for maximum discretion."
+                    },
+                    "mini": {
+                        "title": "Mini Metal Brackets",
+                        "badge": "REDUCED SIZE",
+                        "description": "The same three-dimensional precision of conventional brackets but with a smaller profile that substantially increases comfort and hygiene."
+                    },
+                    "selfLigating": {
+                        "title": "Self-Ligating Brackets",
+                        "badge": "FASTER",
+                        "description": "Available in ceramic or metal. By eliminating the need for elastic ligatures, they reduce friction, accelerating dental movement and shortening treatment time."
+                    },
+                    "invisible": {
+                        "title": "Invisible Orthodontics",
+                        "badge": "NO BRACKETS",
+                        "description": "Premium aesthetic treatment that completely dispenses with wires and brackets, using ultra-thin, fully removable clear aligners."
+                    }
+                }
+            },
             "list": {
                 "smileDesign": {
                     "title": "Smile Design",
                     "description": "We sculpt personalized works of art that reflect your essence. With CAD/CAM digital technology and ultra-thin ceramic lenses, we achieve perfect symmetry and luminosity."
                 },
                 "orthodontics": {
-                    "title": "Invisible Orthodontics",
-                    "description": "The evolution of orthodontics. Digitally designed clear aligners to correct your smile with absolute discretion, comfort, and micrometric precision."
+                    "title": "Orthodontics",
+                    "description": "The evolution of orthodontics. Digitally designed invisible orthodontics to correct your smile with absolute discretion, comfort, and micrometric precision."
                 },
                 "aesthetics": {
                     "title": "Aesthetic Dentistry",

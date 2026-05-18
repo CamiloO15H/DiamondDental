@@ -124,6 +124,13 @@ export default async function LocaleLayout({
     return (
         <html lang={locale} className={`${inter.variable} ${playfair.variable}`}>
             <head>
+                {/* Staged Preloading for the first 5 hero scroll frames for instantaneous initial paint */}
+                <link rel="preload" href="/frames/frame_000.webp" as="image" type="image/webp" />
+                <link rel="preload" href="/frames/frame_001.webp" as="image" type="image/webp" />
+                <link rel="preload" href="/frames/frame_002.webp" as="image" type="image/webp" />
+                <link rel="preload" href="/frames/frame_003.webp" as="image" type="image/webp" />
+                <link rel="preload" href="/frames/frame_004.webp" as="image" type="image/webp" />
+
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

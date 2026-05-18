@@ -1,34 +1,134 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 export default function Teeth3DScroll() {
     const t = useTranslations('Index');
     const containerRef = useRef<HTMLDivElement>(null);
-    const videoRef = useRef<HTMLVideoElement>(null);
+    const canvasRef = useRef<HTMLCanvasElement>(null);
+    
+    // State to track preloading status
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+    const [currentFrame, setCurrentFrame] = useState(0);
 
-    // Track scroll within the 350vh container for extra smoothness and more storytelling space
+    // Persist preloaded images in a ref
+    const preloadedImages = useRef<HTMLImageElement[]>([]);
+
+    // Track scroll within the 350vh container for smooth scrubbing
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ['start start', 'end end']
     });
 
     // Step 1: "DISEÑAMOS TU SONRISA DIAMOND" fades out as user scrolls
-    const text1Opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
-    const text1Y = useTransform(scrollYProgress, [0, 0.3], [0, -60]);
+    const text1Opacity = useTransform(scrollYProgress, [0, 0.25], [1, 0]);
+    const text1Y = useTransform(scrollYProgress, [0, 0.25], [0, -60]);
 
     // Step 2: Intercept with "LA EXCELENCIA TIENE NOMBRE" which fades in and out later
-    const text2Opacity = useTransform(scrollYProgress, [0.38, 0.68, 0.88], [0, 1, 0]);
-    const text2Y = useTransform(scrollYProgress, [0.38, 0.68, 0.88], [40, 0, -40]);
+    const text2Opacity = useTransform(scrollYProgress, [0.38, 0.65, 0.85], [0, 1, 0]);
+    const text2Y = useTransform(scrollYProgress, [0.38, 0.65, 0.85], [40, 0, -40]);
 
-    // Handle scroll-based video scrubbing
-    useMotionValueEvent(scrollYProgress, 'change', (latest) => {
-        if (videoRef.current && videoRef.current.duration) {
-            const targetTime = latest * videoRef.current.duration;
-            videoRef.current.currentTime = Math.min(targetTime, videoRef.current.duration - 0.05);
+    // Preload the 30 WebP frames on component mount for lag-free scroll
+    useEffect(() => {
+        const totalFrames = 30;
+        let loadedCount = 0;
+        const tempImages: HTMLImageElement[] = [];
+
+        for (let i = 0; i < totalFrames; i++) {
+            const img = new Image();
+            // Match the formatted frame name frame_000.webp, frame_001.webp, etc.
+            const frameNum = String(i).padStart(3, '0');
+            img.src = `/frames/frame_${frameNum}.webp`;
+            
+            img.onload = () => {
+                loadedCount++;
+                if (loadedCount === totalFrames) {
+                    setImagesLoaded(true);
+                    // Draw the initial frame once all are loaded
+                    drawFrame(0);
+                }
+            };
+            img.onerror = () => {
+                console.error(`Failed to load frame_${frameNum}.webp`);
+                loadedCount++; // Avoid blocking if a frame fails
+            };
+            tempImages.push(img);
         }
+        
+        preloadedImages.current = tempImages;
+
+        // Add resize listener to keep canvas perfectly responsive
+        const handleResize = () => {
+            if (canvasRef.current) {
+                const canvas = canvasRef.current;
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                // Re-draw current frame on resize
+                drawFrame(currentFrame);
+            }
+        };
+
+        // Initialize canvas dimensions
+        if (canvasRef.current) {
+            canvasRef.current.width = window.innerWidth;
+            canvasRef.current.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', handleResize);
+        
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [currentFrame]);
+
+    // Helper to draw a specific frame index with perfect "object-cover" logic
+    const drawFrame = (index: number) => {
+        const img = preloadedImages.current[index];
+        const canvas = canvasRef.current;
+        if (!img || !canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        // Clear previous frame
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Aspect ratio calculations for perfect cover fit
+        const canvasRatio = canvas.width / canvas.height;
+        const imgRatio = img.width / img.height;
+
+        let drawWidth, drawHeight, drawX, drawY;
+
+        if (canvasRatio > imgRatio) {
+            drawWidth = canvas.width;
+            drawHeight = canvas.width / imgRatio;
+            drawX = 0;
+            drawY = (canvas.height - drawHeight) / 2;
+        } else {
+            drawHeight = canvas.height;
+            drawWidth = canvas.height * imgRatio;
+            drawX = (canvas.width - drawWidth) / 2;
+            drawY = 0;
+        }
+
+        // Draw image onto canvas
+        ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
+    };
+
+    // Scrub through frames dynamically based on scroll progression
+    useMotionValueEvent(scrollYProgress, 'change', (latest) => {
+        if (!imagesLoaded) return;
+        
+        // Map 0.0 - 1.0 to frame index 0 - 29
+        const frameIndex = Math.min(
+            Math.floor(latest * 30),
+            29
+        );
+        
+        setCurrentFrame(frameIndex);
+        drawFrame(frameIndex);
     });
 
     return (
@@ -36,15 +136,14 @@ export default function Teeth3DScroll() {
             {/* Sticky Wrapper: Pins the content to the viewport */}
             <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-center bg-black overflow-hidden">
                 
-                {/* 3D Teeth Video: Full screen with 70% opacity for better text contrast */}
-                <video
-                    ref={videoRef}
-                    src="/images/3D/3D-Dientes.mp4"
-                    muted
-                    playsInline
-                    preload="auto"
-                    className="absolute inset-0 w-full h-full object-cover opacity-70 select-none pointer-events-none"
+                {/* 3D Teeth Canvas: Full screen with 70% opacity for luxury styling and contrast */}
+                <canvas
+                    ref={canvasRef}
+                    className="absolute inset-0 w-full h-full object-cover opacity-70 select-none pointer-events-none z-10"
                 />
+
+                {/* Ambient vignette gradient around the screen */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.85)_100%)] z-15 pointer-events-none" />
 
                 {/* FIRST TEXT SECTION: Initial Hero Hook */}
                 <motion.div

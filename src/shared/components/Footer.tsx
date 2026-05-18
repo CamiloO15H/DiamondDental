@@ -50,8 +50,8 @@ const FacebookIcon = () => (
 
 const WhatsAppIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11 8.38 8.38 0 0 1 3.8.9L21 3.5Z" />
-        <path d="M17.4 11a4.3 4.3 0 0 0-4.3-4.3H13v1.8h.1A2.5 2.5 0 0 1 15.6 11Z" />
+        <path d="M3 21l1.9-5.7A8.5 8.5 0 1 1 21 12a8.5 8.5 0 0 1-16.1 3.8L3 21z" />
+        <path d="M9 9.5a.5.5 0 0 0-.1.3c.1.7.5 1.5 1 2.1.6.5 1.3.9 2 1a.5.5 0 0 0 .4-.2l.6-.6c.2-.2.5-.2.7-.1l1.5.7c.3.1.4.5.2.8l-.8 1.1c-.3.4-.8.5-1.2.3-2.3-1-4.1-2.8-5.1-5.1-.2-.4-.1-.9.3-1.2l1.1-.8c.3-.2.7-.1.8.2l.7 1.5c.1.2.1.5-.1.7l-.6.6z" />
     </svg>
 );
 
